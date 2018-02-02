@@ -170,10 +170,9 @@ globalFuncs.stripTags = function(str) {
     return str;
 };
 globalFuncs.checkAndRedirectHTTPS = function() {
-    var host = "mycrypto.com";
-    var hostw = "https://mycrypto.com";
-    var path = window.location.pathname;
-    if (host == window.location.host) window.location = hostw + path;
+    if (window.location.host == "http://mycrypto.com" || window.location.host == "http://www.mycrypto.com" || window.location.host == "https://www.mycrypto.com") {
+      window.location = "https://mycrypto.com/" + window.location.pathname;
+    }
 };
 globalFuncs.isStrongPass = function(password) {
     return password.length > 8;
