@@ -115,18 +115,20 @@ var tabsCtrl = function($scope, globalService, $translate, $sce) {
         return $scope.Validator.isValidURL(nodeUrl);
     }
     $scope.setCurNodeFromStorage = function() {
-        var node = globalFuncs.localStorage.getItem('curNode', null);
-        if (node === JSON.stringify({"key":"eth_metamask"})) {
-          node = JSON.stringify({"key":"eth_infura"})
-        }
 
+        var node = globalFuncs.localStorage.getItem('curNode', null);
         var requestedNetwork = globalFuncs.urlGet('network');
+
         if (requestedNetwork && nodes.nodeList.hasOwnProperty(requestedNetwork)) {
             node = JSON.stringify({ "key": requestedNetwork });
         }
 
         if (node == null) {
             $scope.changeNode($scope.defaultNodeKey);
+
+        } else if (node === JSON.stringify({"key":"eth_metamask"})) {
+          node = JSON.stringify({"key":"eth_infura"})
+
         } else {
             node = JSON.parse(node);
             var key = globalFuncs.stripTags(node.key);
