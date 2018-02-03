@@ -277,13 +277,17 @@ input[type="password"]+.eye {
 .collapse-container {
   h1 {
     margin: .25rem 0;
+    display: inline-block;
+  }
+  > span {
+    display: inline-block;
   }
   .collapse-button {
     float: left;
     font-weight: 500;
     user-select: none;
     padding: .25rem;
-    margin: .25rem -30px;
+    margin: 0 -25px;
     font-size: 1.6rem;
     line-height: 1.6;
   }
@@ -435,13 +439,6 @@ label small {
     right: 0;
     min-width: 37rem;
     small { float: right; }
-  }
-}
-
-.dropdown-gas {
-  padding-bottom: 1rem;
-  @media screen and (max-width: 900px) {
-    padding-bottom: 2rem;
   }
 }
 

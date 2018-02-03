@@ -191,6 +191,7 @@
   li, p {
     font-size: .8rem;
     margin: .25em 0;
+    font-weight: 400;
   }
   a {
     color: #7fe5ff;
@@ -208,25 +209,15 @@
 .footer--logo {
   max-width: 100%;
   height: auto;
+  margin-bottom: @space-xs;
 }
 
-.header--gas {
-  max-width: 26rem;
-  color: @text-color;
-  p {
-    font-weight: 400;
-    margin: @space-sm 0 0;
-  }
-  a, a:hover, a:focus, a:visited {
-    color: @brand-primary;
-  }
-}
 
 .footer--col() {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: @space @space-xl;
+  padding: @space-md @space-xl;
   @media screen and (max-width: @screen-xs) {
     max-width: 100%;
   }

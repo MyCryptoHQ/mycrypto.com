@@ -134,7 +134,7 @@ var swapCtrl = function($scope, shapeShiftService) {
   };
 
   var timeOutMessage =
-    "Time has run out. If you have already sent, please wait 1 hour. If your order has not be processed after 1 hour, please press the orange 'Issue with your Swap?' button.";
+    "Time has run out. If you have already sent, please wait 1 hour. If your order has not be processed after 1 hour, please press the orange 'Issue with your Swap?' button below.";
 
   var checkCanShowRates = function() {
     if ($scope.loadedShapeShiftRates && $scope.loadedBityRates) {
