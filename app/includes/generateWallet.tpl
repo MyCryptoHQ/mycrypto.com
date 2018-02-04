@@ -265,13 +265,13 @@
       </a>
 
       <div class="warn">
-        <p>
+        <p translate="GEN_Warning_1">
           **Do not lose it!** It cannot be recovered if you lose it.
         </p>
-        <p>
+        <p translate="GEN_Warning_2">
           **Do not share it!** Your funds will be stolen if you give this information to anyone.
         </p>
-        <p>
+        <p translate="GEN_Warning_3">
           **Make a backup!** Secure it like the millions of dollars it may one day be worth.
         </p>
       </div>
