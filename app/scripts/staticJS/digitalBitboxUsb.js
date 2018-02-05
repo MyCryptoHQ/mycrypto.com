@@ -1,5 +1,5 @@
 /**
- *  (c) 2017 Douglas Bakkum, Shift Devices AG 
+ *  (c) 2017 Douglas Bakkum, Shift Devices AG
  *  MIT license
 **/
 
@@ -22,7 +22,7 @@ DigitalBitboxUsb.normal64 = function(base64) {
 DigitalBitboxUsb.prototype.u2fCallback = function(response, callback) {
     if ('signatureData' in response) {
         var data = new Buffer((DigitalBitboxUsb.normal64(response.signatureData)), 'base64');
-        if (data.length > 7) 
+        if (data.length > 7)
             callback(data.slice(5));
         else
             return;// Empty frame received, wait for data
@@ -47,7 +47,7 @@ DigitalBitboxUsb.prototype.exchange = function(msg, callback) {
             version: 'U2F_V2',
             keyHandle: DigitalBitboxUsb.webSafe64(kh.toString('base64')),
         };
-        u2f.sign(location.origin, DigitalBitboxUsb.webSafe64(challenge.toString('base64')), [key], localCallback, this.timeoutSeconds);	
+        u2fapi.sign(location.origin, DigitalBitboxUsb.webSafe64(challenge.toString('base64')), [key], localCallback, this.timeoutSeconds);	
     }
 }
 
