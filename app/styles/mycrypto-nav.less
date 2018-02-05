@@ -3,14 +3,18 @@
   background: white;
   box-shadow: 0px 6px 50px 0px rgba(0,0,0,.07);
   .header__wrap {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 1%;
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 113rem;
+    border-bottom: 1px solid @gray-lighter;
+
+    > .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &:before,
+      &:after {
+        content: none;
+      }
+    }
   }
   .header__dropdowns {
     align-self: flex-end;
@@ -19,6 +23,17 @@
     .dropdown {
       text-align: center;
       border-left: 1px solid @gray-lighter;
+
+      &:last-child {
+        @media screen and (min-width: @screen-md) {
+          border-right: 1px solid @gray-lighter;
+        }
+        @media screen and (max-width: @screen-md) {
+          display: none;
+        }
+      }
+
+
       & > a {
         display: block;
         font-size: .85rem;
