@@ -137,7 +137,7 @@ var swapCtrl = function($scope, shapeShiftService) {
     "Time has run out. If you have already sent, please wait 1 hour. If your order has not be processed after 1 hour, please press the orange 'Issue with your Swap?' button below.";
 
   var checkCanShowRates = function() {
-    if ($scope.loadedShapeShiftRates && $scope.loadedBityRates) {
+    if ($scope.loadedShapeShiftRates) {
       $scope.canShowSwap = true;
       if (!$scope.$$phase) {
         $scope.$apply();
@@ -145,39 +145,20 @@ var swapCtrl = function($scope, shapeShiftService) {
     }
   };
 
-  function handleBityRatesRequest() {
-    $scope.bity.refreshRates(function() {
-      if (!$scope.loadedBityRates) {
-        $scope.allAvailableDestinationCoins = $scope.allAvailableDestinationCoins.concat(
-          $scope.originKindCoins
-        );
-      }
-      if (!$scope.loadedBityRates && $scope.showStage1) {
-        $scope.setOrderCoin(true, "ETH");
-      }
-      $scope.loadedBityRates = true;
-      checkCanShowRates();
-    });
-  }
-
-  handleBityRatesRequest();
-  setInterval(function() {
-    handleBityRatesRequest();
-  }, 30000);
-
   $scope.getAvailableShapeShiftCoins = function() {
     shapeShiftService
       .getAvailableCoins($scope.shapeShiftWhitelistCoins)
       .then(function(shapeShiftCoinData) {
         $scope.shapeShiftCoinData = shapeShiftCoinData;
         $scope.loadedShapeShiftRates = true;
+        $scope.isBitySwap = false;
         // not shapeShiftWhitelistCoins in case coin is not returned by `getcoins`
         $scope.allAvailableDestinationCoins = Object.keys(shapeShiftCoinData);
         $scope.originKindCoins = Object.keys(shapeShiftCoinData);
         checkCanShowRates();
       })
       .catch(function(err) {
-        $scope.loadedShapeShiftRates = true;
+        $scope.loadedShapeShiftRates = false;
         checkCanShowRates();
         $scope.notifier.danger(
           "ShapeShift swaps are currently unavailable.",
@@ -187,26 +168,11 @@ var swapCtrl = function($scope, shapeShiftService) {
   };
 
   var swapProvider = function(originKind, destinationKind) {
-    var provider;
-    if (originKind === "ETH" && destinationKind === "BTC") {
-      provider = "BITY";
-    } else if (originKind === "BTC" && destinationKind === "ETH") {
-      provider = "BITY";
-    } else if (
-      (originKind === "BTC" || originKind === "ETH") &&
-      destinationKind === "REP"
-    ) {
-      provider = "BITY";
-    } else {
-      provider = "SHAPESHIFT";
-    }
-    return provider;
+    return "SHAPESHIFT";
   };
 
   var checkIfBitySwap = function() {
-    $scope.isBitySwap =
-      swapProvider($scope.swapOrder.fromCoin, $scope.swapOrder.toCoin) ===
-      "BITY";
+    $scope.isBitySwap = false;
   };
 
   var initValues = function() {
@@ -850,7 +816,9 @@ var swapCtrl = function($scope, shapeShiftService) {
         processOrder();
       })
       .catch(function(err) {
-        $scope.notifier.danger('Unable to create ShapeShift order. Please try again later or contact support.');
+        $scope.notifier.danger(
+          "Unable to create ShapeShift order. Please try again later or contact support."
+        );
         $scope.orderOpenLoading = false;
       });
   };
