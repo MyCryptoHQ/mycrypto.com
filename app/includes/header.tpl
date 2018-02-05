@@ -127,49 +127,51 @@
   </section>
 
 
-  <nav role="navigation" aria-label="main navigation" class="container nav-container overflowing">
-    <a aria-hidden="true"
-       ng-show="showLeftArrow"
-       class="nav-arrow-left"
-       ng-click="scrollLeft(100);"
-       ng-mouseover="scrollHoverIn(true,2);" ng-mouseleave="scrollHoverOut()">&#171;</a>
-    <div class="nav-scroll">
-      <ul class="nav-inner">
-        @@if (site === 'web' ) {
-          <li ng-repeat="tab in tabNames track by $index" \
-              class="nav-item {{tab.name}}" \
-              ng-class="{active: $index==gService.currentTab}"
-              ng-show="tab.mew"
-              ng-click="tabClick($index)">
-                <a tabindex="0" aria-label="nav item: {{tab.name | translate}}" translate="{{tab.name}}"></a>
+  <nav role="navigation" aria-label="main navigation" class="nav-container overflowing">
+    <div class="container">
+      <a aria-hidden="true"
+         ng-show="showLeftArrow"
+         class="nav-arrow-left"
+         ng-click="scrollLeft(100);"
+         ng-mouseover="scrollHoverIn(true,2);" ng-mouseleave="scrollHoverOut()">&#171;</a>
+      <div class="nav-scroll">
+        <ul class="nav-inner">
+          @@if (site === 'web' ) {
+            <li ng-repeat="tab in tabNames track by $index" \
+                class="nav-item {{tab.name}}" \
+                ng-class="{active: $index==gService.currentTab}"
+                ng-show="tab.mew"
+                ng-click="tabClick($index)">
+                  <a tabindex="0" aria-label="nav item: {{tab.name | translate}}" translate="{{tab.name}}"></a>
+            </li>
+          }
+          @@if (site === 'cx' ) {
+            <li ng-repeat="tab in tabNames track by $index" \
+                class="nav-item {{tab.name}}" \
+                ng-class="{active: $index==gService.currentTab}"
+                ng-show="tab.cx"
+                ng-click="tabClick($index)">
+                  <a tabindex="0" aria-label="nav item: {{tab.name | translate}}" translate="{{tab.name}}"></a>
+            </li>
+          }
+          <li class="nav-item help">
+            <a href="https://support.mycrypto.com/" target="_blank" rel="noopener noreferrer">
+              <span translate="NAV_Help">
+                Help
+              </span>
+            </a>
           </li>
-        }
-        @@if (site === 'cx' ) {
-          <li ng-repeat="tab in tabNames track by $index" \
-              class="nav-item {{tab.name}}" \
-              ng-class="{active: $index==gService.currentTab}"
-              ng-show="tab.cx"
-              ng-click="tabClick($index)">
-                <a tabindex="0" aria-label="nav item: {{tab.name | translate}}" translate="{{tab.name}}"></a>
-          </li>
-        }
-        <li class="nav-item help">
-          <a href="https://support.mycrypto.com/" target="_blank" rel="noopener noreferrer">
-            <span translate="NAV_Help">
-              Help
-            </span>
-          </a>
-        </li>
-      </ul>
-    </div>
+        </ul>
+      </div>
 
-    <a aria-hidden="true"
-       ng-show="showRightArrow"
-       class="nav-arrow-right"
-       ng-click="scrollRight(100);"
-       ng-mouseover="scrollHoverIn(false,2);"
-       ng-mouseleave="scrollHoverOut()">&#187;
-    </a>
+      <a aria-hidden="true"
+         ng-show="showRightArrow"
+         class="nav-arrow-right"
+         ng-click="scrollRight(100);"
+         ng-mouseover="scrollHoverIn(false,2);"
+         ng-mouseleave="scrollHoverOut()">&#187;
+      </a>
+    </div>
   </nav>
 
   @@if (site === 'web' ) { @@include( './header-node-modal.tpl', { "site": "web" } ) }
