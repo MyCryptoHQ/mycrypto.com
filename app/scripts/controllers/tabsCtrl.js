@@ -21,8 +21,11 @@ var tabsCtrl = function($scope, globalService, $translate, $sce) {
     $scope.nodeService = $scope.ajaxReq.service
     $scope.$watch('ajaxReq.type', function() { $scope.nodeType = $scope.ajaxReq.type })
     $scope.$watch('ajaxReq.service', function() { $scope.nodeService = $scope.ajaxReq.service })
+
+    $scope.arrowVisibilityTimeout = null
     $scope.setArrowVisibility = function() {
-        setTimeout(function() {
+        clearTimeout($scope.arrowVisibilityTimeout);
+        $scope.arrowVisibilityTimeout = setTimeout(function() {
             if (document.querySelectorAll('.nav-inner')[0] && document.querySelectorAll('.nav-scroll')[0]) {
                 $scope.showLeftArrow = false;
                 $scope.showRightArrow = !(document.querySelectorAll('.nav-inner')[0].clientWidth <= document.querySelectorAll('.nav-scroll')[0].clientWidth);
@@ -31,6 +34,9 @@ var tabsCtrl = function($scope, globalService, $translate, $sce) {
         }, 200);
     }
     $scope.setArrowVisibility();
+    window.addEventListener('resize', function() {
+      $scope.setArrowVisibility();
+    });
 
     var gasPriceKey = "gasPrice";
     $scope.gasChanged = function() {
