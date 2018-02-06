@@ -64,7 +64,7 @@ if (IS_CX) {
     var trezorConnect        = require('./staticJS/trezorConnect');
     var digitalBitboxUsb     = require('./staticJS/digitalBitboxUsb');
     var digitalBitboxEth     = require('./staticJS/digitalBitboxEth');
-    window.u2f               = u2f;
+    window.u2fapi            = u2f;
     window.Ledger3           = ledger3;
     window.ledgerEth         = ledgerEth;
     window.TrezorConnect     = trezorConnect.TrezorConnect;

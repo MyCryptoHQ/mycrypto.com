@@ -57,12 +57,12 @@ Ledger3.prototype.exchange = function(apduHex, callback) {
 	var challenge = new Buffer("0000000000000000000000000000000000000000000000000000000000000000", 'hex');
 	var key = {};
 	key['version'] = 'U2F_V2';
-	key['keyHandle'] = Ledger3.webSafe64(keyHandle.toString('base64'));	
+	key['keyHandle'] = Ledger3.webSafe64(keyHandle.toString('base64'));
 	var self = this;
 	var localCallback = function(result) {
 		self.u2fCallback(result, callback);
 	}
-	u2f.sign(location.origin, Ledger3.webSafe64(challenge.toString('base64')), [key], localCallback, this.timeoutSeconds);	
+	u2fapi.sign(location.origin, Ledger3.webSafe64(challenge.toString('base64')), [key], localCallback, this.timeoutSeconds);
 }
 
 module.exports = Ledger3

@@ -136,7 +136,7 @@
   <div class="block token-balances">
     <h5 translate="sidebar_TokenBal">Token Balances</h5>
 
-    <!-- Load Token Balances -->
+    <!-- Load Token Balances
     <a class="btn btn-warning btn-xs"
        ng-click="wallet.setTokens(); globalService.tokensLoaded=true"
        ng-hide="globalService.tokensLoaded">
@@ -144,10 +144,19 @@
       Load Tokens
     </a>
     <br ng-hide="globalService.tokensLoaded" /><br ng-hide="globalService.tokensLoaded" />
+    -->
 
     <!-- you can your Balance on Blockchain Explorer -->
-    <p class="u__protip">
-      Remember, you can always view your Balances On
+    <h5 class="u__protip">
+      <a href="https://support.mycrypto.com/tokens/adding-new-token-and-sending-custom-tokens.html"
+         rel="noopener noreferrer"
+         target="_blank">
+         How to See Your Tokens
+      </a>
+    </h5>
+
+    <p>
+      You can also view your Balances on
       <a ng-show="ajaxReq.type != 'CUS'"
          href="{{ajaxReq.blockExplorerAddr.replace('[[address]]', wallet.getAddressString())}}"
          target="_blank"
@@ -201,6 +210,30 @@
       <button class="btn btn-primary btn-xs" ng-click="saveTokenToLocal()" translate="x_Save">Save</button>
 
     </div>
+
+    <br/>
+    <br/>
+
+    <!-- Balances -->
+    <table class="account-info">
+      <tr ng-class="token.type!=='default' ? 'custom-token' : ''"
+          ng-repeat="token in wallet.tokenObjs track by $index"
+          ng-hide="(token.balance==0 || token.balance=='Click to Load') && showAllTokens==false">
+        <td class="mono wrap point">
+          <img src="images/icon-remove.svg"
+               class="token-remove"
+               title="Remove Token"
+               ng-click="removeTokenFromLocal(token.symbol)"
+               ng-show="token.type!=='default'" />
+          <span ng-click="setAndVerifyBalance(token)">
+            {{ token.getBalance() }}
+          </span>
+        </td>
+        <td>
+          {{ token.getSymbol() }}
+        </td>
+      </tr>
+    </table>
   </div>
 
 
