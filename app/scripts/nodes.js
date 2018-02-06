@@ -220,6 +220,11 @@ nodes.nodeList = {
     }
 };
 
+// add a 'key' attribute to each node that is its object key
+Object.keys(nodes.nodeList).forEach(function(key) {
+    nodes.nodeList[key].key = key;
+});
+
 
 nodes.ethPrice = require('./nodeHelpers/ethPrice');
 module.exports = nodes;
