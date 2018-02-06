@@ -55,7 +55,7 @@ var signMsgCtrl = function($scope, $sce, walletService) {
                 var app = new ledgerEth($scope.wallet.getHWTransport());
                 var localCallback = function(signed, error) {
                     if (typeof error != "undefined") {
-                        error = error.errorCode ? u2f.getErrorByCode(error.errorCode) : error;
+                        error = error.errorCode ? u2fapi.getErrorByCode(error.errorCode) : error;
                         if (callback !== undefined) callback({
                             isError: true,
                             error: error
@@ -80,7 +80,7 @@ var signMsgCtrl = function($scope, $sce, walletService) {
                 var msg = ethUtil.hashPersonalMessage(ethUtil.toBuffer(thisMessage));
                 var localCallback = function(signed, error) {
                     if (typeof error != "undefined") {
-                        error = error.errorCode ? u2f.getErrorByCode(error.errorCode) : error;
+                        error = error.errorCode ? u2fapi.getErrorByCode(error.errorCode) : error;
                         $scope.notifier.danger(error);
                         return;
                     }
