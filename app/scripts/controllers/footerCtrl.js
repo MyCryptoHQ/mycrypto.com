@@ -1,6 +1,9 @@
 'use strict';
+
 var footerCtrl = function($scope, globalService) {
     var gasPriceKey = "gasPrice";
+    var packageJson = require('../../../package.json');
+    $scope.version = packageJson.version;
     $scope.footerModal = new Modal(document.getElementById('disclaimerModal'));
     $scope.ethBlockNumber = "loading";
     $scope.etcBlockNumber = "loading";
