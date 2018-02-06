@@ -67,6 +67,9 @@ var tabsCtrl = function($scope, globalService, $translate, $sce) {
         curNode = $scope.nodeList[key];
       } else {
         curNode = $scope.nodeList[$scope.defaultNodeKey];
+        globalFuncs.localStorage.setItem('curNode', JSON.stringify({
+            key: $scope.defaultNodeKey
+        }));
       }
       return curNode;
     }
@@ -88,13 +91,13 @@ var tabsCtrl = function($scope, globalService, $translate, $sce) {
 
         $scope.dropdownNode = false;
         Token.popTokens = $scope.curNode.tokenList;
-        ajaxReq['key'] = key;
+        ajaxReq['key'] = newNode.key;
         for (var attrname in $scope.curNode.lib) ajaxReq[attrname] = $scope.curNode.lib[attrname];
         for (var attrname in $scope.curNode)
             if (attrname != 'name' && attrname != 'tokenList' && attrname != 'lib')
                 ajaxReq[attrname] = $scope.curNode[attrname];
-            globalFuncs.localStorage.setItem('curNode', JSON.stringify({
-            key: key
+        globalFuncs.localStorage.setItem('curNode', JSON.stringify({
+            key: newNode.key
         }));
         if (nodes.ensNodeTypes.indexOf($scope.curNode.type) == -1) $scope.tabNames.ens.cx = $scope.tabNames.ens.mew = false;
         if (nodes.domainsaleNodeTypes.indexOf($scope.curNode.type) == -1) $scope.tabNames.domainsale.cx = $scope.tabNames.domainsale.mew = false;
