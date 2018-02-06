@@ -8,7 +8,7 @@
     </p>
   </div>
 </section>
-<footer class="footer" role="content" aria-label="footer">
+<footer class="footer" role="content" aria-label="footer" ng-controller="footerCtrl">
 
   <article class="block__wrap" style="max-width: 1780px; margin: auto;">
 
