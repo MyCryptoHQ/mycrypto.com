@@ -92,7 +92,7 @@
             <ul class="dropdown__grid dropdown__grid--left" ng-if="dropdownFrom">
                 <li ng-repeat="coin in originKindCoins | orderBy:'toString()' track by $index">
                     <a ng-class="{true:'active'}[coin == swapOrder.fromCoin]" ng-click="setOrderCoin(true, coin)">
-                        <img src="{{shapeShiftCoinData[coin]['image']}}" height="20" width="20"/>
+                        <img ng-src="{{shapeShiftCoinData[coin]['image']}}" height="20" width="20"/>
                         <strong>{{coin}}</strong>
                         <br/>
                         <small>{{getNameFromSymbol(coin)}}</small>
@@ -131,7 +131,7 @@
                 <li ng-repeat="coin in allAvailableDestinationCoins | orderBy:'toString()' track by $index"
                     ng-show="coin != swapOrder.fromCoin">
                     <a ng-class="{true:'active'}[coin == swapOrder.toCoin]" ng-click="setOrderCoin(false, coin)">
-                        <img src="{{shapeShiftCoinData[coin]['image']}}" height="20" width="20"/>
+                        <img ng-src="{{shapeShiftCoinData[coin]['image']}}" height="20" width="20"/>
                         <strong>{{coin}}</strong>
                         <br/>
                         <small>{{getNameFromSymbol(coin)}}</small>
