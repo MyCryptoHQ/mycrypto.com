@@ -33,7 +33,7 @@ $ npm install
 ```
 
 ```
-$ gulp
+$ npm run dev
 ```
 
 Open the resulting `dist/index.html` file in your browser.
