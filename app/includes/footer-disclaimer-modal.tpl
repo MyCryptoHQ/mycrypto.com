@@ -20,7 +20,7 @@
         </p>
 
         <p class="small">
-          Copyright &copy; 2015-2017 MyCrypto LLC
+          Copyright &copy; 2015-2017 MyEtherWallet LLC
           <br />
           Copyright &copy; 2018 MyCrypto, Inc.
         </p>
