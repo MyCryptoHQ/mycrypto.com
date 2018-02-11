@@ -67,7 +67,7 @@ nodes.nodeList = {
         'tokenList': require('./tokens/ethTokens.json'),
         'abiList': require('./abiDefinitions/ethAbi.json'),
         'service': 'infura.io',
-        'lib': new nodes.infuraNode('https://mainnet.infura.io/mew')
+        'lib': new nodes.infuraNode('https://mainnet.infura.io/mycrypto')
     },
     'eth_giveth': {
         'name': 'ETH',
@@ -103,7 +103,7 @@ nodes.nodeList = {
         'tokenList': require('./tokens/ropstenTokens.json'),
         'abiList': require('./abiDefinitions/ropstenAbi.json'),
         'service': 'infura.io',
-        'lib': new nodes.infuraNode('https://ropsten.infura.io/mew')
+        'lib': new nodes.infuraNode('https://ropsten.infura.io/mycrypto')
     },
     'kov_ethscan': {
         'name': 'Kovan',
@@ -127,7 +127,7 @@ nodes.nodeList = {
         'tokenList': require('./tokens/kovanTokens.json'),
         'abiList': require('./abiDefinitions/kovanAbi.json'),
         'service': 'infura.io',
-        'lib': new nodes.infuraNode('https://kovan.infura.io/mew')
+        'lib': new nodes.infuraNode('https://kovan.infura.io/mycrypto')
     },
     'rin_ethscan': {
         'name': 'Rinkeby',
@@ -151,7 +151,7 @@ nodes.nodeList = {
         'tokenList': require('./tokens/rinkebyTokens.json'),
         'abiList': require('./abiDefinitions/rinkebyAbi.json'),
         'service': 'infura.io',
-        'lib': new nodes.infuraNode('https://rinkeby.infura.io/mew')
+        'lib': new nodes.infuraNode('https://rinkeby.infura.io/mycrypto')
     },
     'exp': {
         'name': 'EXP',
