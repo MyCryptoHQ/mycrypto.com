@@ -7,18 +7,18 @@ ja.data = {
 GEN_Help_0                      :  'お財布をお持ちですか？', /*Already have a wallet somewhere?*/
 GEN_Help_MetaMask               :  'とっても簡単です！キーはフィッシングサイトではなく、メタマスク(Metamask)に残っています。すぐ試してください！', /*So easy! Keys stay in MetaMask, not on a phishing site! Try it today.*/
 
-GEN_Warning_1                   :  '**絶対に忘れないようにしてください！**　失くしてしまうと、回復できません。', /***Do not lose it!** It cannot be recovered if you lose it.*/
-GEN_Warning_2                   :  '**他人と共有しないでください**　悪意のあるサイトでこのファイルを使うと、あなたのお金が盗まれます。', /***Do not share it!** Your funds will be stolen if you give this information to anyone.*/
-GEN_Warning_3                   :  '**バックアップを作成してください！**　ゆくゆくは、数億円の大金になるものと心得て安全性を確保してください。', /***Make a backup!** Secure it like the millions of dollars it may one day be worth.*/
+GEN_Warning_1                   :  '『絶対に忘れないようにしてください！』　失くしてしまうと、回復できません。', /***Do not lose it!** It cannot be recovered if you lose it.*/
+GEN_Warning_2                   :  '『他人と共有しないでください！』　悪意のあるサイトでこのファイルを使うと、あなたのお金が盗まれます。', /***Do not share it!** Your funds will be stolen if you give this information to anyone.*/
+GEN_Warning_3                   :  '『バックアップを作成してください！』　ゆくゆくは、何億円もの大金になるものと心得て安全を確保してください。', /***Make a backup!** Secure it like the millions of dollars it may one day be worth.*/
 
 GAS_Price_1                     : '普通',　/*Not So Fast*/
 GAS_Price_2                     : '迅速', /*Fast*/
 GAS_Price_3                     : '超速', /*Fast AF*/
 
 CONTRACT_Helper_1               :  'マルチシグのアドレスに変えてください', /*Please change the address to your own Multisig Contract Address.*/
-CONTRACT_Warning_1              :  'まもなく契約が展開されます。', /*You are about to **deploy a contract**.*/
+CONTRACT_Warning_1              :  'まもなく契約コードに展開されます。', /*You are about to **deploy a contract**.*/
 CONTRACT_Warning_2              :  '次のネットワークに展開されます：', /*It will be deployed on the following network:*/
-CONTRACT_Warning_3              :  'まもなく契約上の機能が実行されます。', /*You are about to **execute a function on contract**.*/
+CONTRACT_Warning_3              :  'まもなく契約コード上の機能が実行されます。', /*You are about to **execute a function on contract**.*/
 
 SEND_Helper_Contract            :  'ほとんどの場合、0.のままにしておきます。', /*In most cases you should leave this as 0.*/
 SEND_ViewOnly                   :  '自分のアドレスを指定するだけでは送信できません。お財布を解錠する必要があります。', /*You cannot send with only your address. You must use one of the other options to unlock your wallet in order to send.*/
@@ -99,11 +99,11 @@ ENS_Start_Title                 :  '競売を始める', /*Start an Auction*/
 ENS_WrongAddress_1              :  '解錠したワレットにドメイン名がありません。', /*The wallet you unlocked does not own the name */
 ENS_WrongAddress_2              :  'アドレスを指定してお財布を解錠してください。', /*Please unlock the wallet with address */
 
-EOS_01                          :  '**ＥＯＳの鍵対の生成**', /* **Generate EOS Key-pair** */
-EOS_02                          :  '**ＥＯＳの鍵を登録／転写する**', /* **Register / Map your EOS Key** */
+EOS_01                          :  '『ＥＯＳの鍵対の生成』', /* **Generate EOS Key-pair** */
+EOS_02                          :  '『ＥＯＳの鍵を登録／転写する』', /* **Register / Map your EOS Key** */
 EOS_03                          :  '`register`を選択する', /*Select `register`*/
-EOS_04                          :  '**ＥＯＳの公開鍵**を入力する　<---　ＥＯＳの公開鍵に注意！', /*Enter your **EOS Public Key** <--- CAREFUL! EOS PUBLIC KEY!*/
-EOS_05                          :  '送出ページでＥＯＳの契約に入金', /*Fund EOS Contract on Send Page*/
+EOS_04                          :  '「ＥＯＳの公開鍵」を入力する　<---　ＥＯＳの公開鍵に注意！', /*Enter your **EOS Public Key** <--- CAREFUL! EOS PUBLIC KEY!*/
+EOS_05                          :  '送出ページでＥＯＳの契約コードに入金', /*Fund EOS Contract on Send Page*/
 EOS_06                          :  'Ether/トークンの送出ページに移動', /*Go to Send Page*/
 EOS_07                          :  '解錠中のお財布と同じものをここで解錠', /*Unlock same wallet you are unlocking here.*/
 EOS_08                          :  '支援する数量を`0xd0a6E6C54DbC68Db5db3A091B171A77407Ff7ccf`に送出する', /*Send Amount you want to Contribute to `0xd0a6E6C54DbC68Db5db3A091B171A77407Ff7ccf`*/
@@ -115,24 +115,24 @@ ONBOARD_welcome_title           :  'いらっしゃいませ！ MyCrypto.com へ
 ONBOARD_welcome_content__1      :  '安全のためにご理解ください🙏 。', /*Please take some time to understand this for your own safety. 🙏*/
 ONBOARD_welcome_content__2      :  'これらの警告をよくご覧いただきませんと、**資産が盗まれる**ことになります。', /*Your funds will be stolen if you do not heed these warnings.*/
 ONBOARD_welcome_content__3      :  'わずらわしい説明と重々に承知いたしております。申し訳ございません。', /*We know this click-through stuff is annoying. We are sorry.*/
-ONBOARD_welcome_content__4      :  'ＭＥＷって何？', /*What is MyCrypto*/
+ONBOARD_welcome_content__4      :  'MyCryptoって何？', /*What is MyCrypto*/
 ONBOARD_welcome_content__5      :  'MyCryptoはソースコード公開で、クライアント側にある無料で共用の利用者窓口です。', /*MyCrypto is a free, open-source, client-side interface.*/
 ONBOARD_welcome_content__6      :  'ブロックチェーン上の暗号鍵と暗号資産の管理を直接行うことができます。', /*We allow you to interact directly with the blockchain while remaining in full control of your keys &amp; your funds.*/
 ONBOARD_welcome_content__7      :  'セキュリティの全責任は**自分**に、そして**自分だけ**にあります。', /***You** and **only you** are responsible for your security.*/
-ONBOARD_welcome_content__8      :  'ＭＥＷを騙る詐欺サイトに行って、暗号鍵や、暗号資産を盗られてしまったら、誰も取り返したり凍結することはできません。', /*We cannot recover your funds or freeze your account if you visit a phishing site or lose your private key.*/
+ONBOARD_welcome_content__8      :  '詐欺サイトで騙されたり、暗号鍵や、暗号資産を盗まれてしまうと、誰も取り返したり凍結することはできません。', /*We cannot recover your funds or freeze your account if you visit a phishing site or lose your private key.*/
 ONBOARD_bank_title              :  'MyCryptoは金融機関にあらず　', /*MyCrypto is not a Bank*/
 ONBOARD_bank_content__1         :  '取引所などの金融機関に口座を開設すると、その金融機関がシステムの中にあなたの口座を作成します。', /*When you open an account with a bank or exchange, they create an account for you in their system.*/
 ONBOARD_bank_content__2         :  'その金融機関は口座のパスワード、残高、取引記録や最終的にあなたの財産を含む個人情報を記録管理します。', /*The bank keeps track of your personal information, account passwords, balances, transactions and ultimately your money.*/
 ONBOARD_bank_content__3         :  'また、カードが盗難に会った際の払い戻しなど、口座の維持管理に必要な手数料を徴収します。', /*The bank charge fees to manage your account and provide services, like refunding transactions when your card gets stolen.*/
 ONBOARD_bank_content__4         :  'そのため、送金したり、オンラインで口座の確認をしたり、パスワードや盗難に会ったカードの再発行ができます。', /*The bank allows you to write a check or charge your debit card to send money, go online to check your balance, reset your password, and get a new debit card if you lose it.*/
 ONBOARD_bank_content__5         :  '金融機関や取引所にある口座では、送金額の上限、送金相手の設定、送金前にどれくらいの時間をかけて相手の疑わしさを調べるか、などを独自に決めています。全て手数料が元になっています。', /*You have an account *with the bank or exchange* and they decide how much money you can send, where you can send it, and how long to hold on a suspicious deposit. All for a fee.*/
-ONBOARD_welcome_title__alt      :  '前置き', /*Introduction*/
+ONBOARD_welcome_title__alt      :  'イントロ', /*Introduction*/
 ONBOARD_interface_title         :  'MyCryptoは、共用の利用者窓口　', /*MyCrypto is an Interface*/
 ONBOARD_interface_content__1    :  'MyCryptoを使って口座を作る時、一対の暗号のための二つの長い数字、すなわち秘密鍵と公開鍵（アドレス）とが作成されます。', /*When you create an account on MyCrypto you are generating a cryptographic set of numbers: your private key and your public key (address).*/
 ONBOARD_interface_content__2    :  'これらの暗号鍵の操作は全て自分のコンピューターのブラウザの中で行われます。', /*The handling of your keys happens entirely on your computer, inside your browser.*/
 ONBOARD_interface_content__3    :  '私たちは、秘密鍵、パスワードや口座情報の送信や保管を一切いたしません。', /*We never transmit, receive or store your private key, password, or other account information.*/
 ONBOARD_interface_content__4    :  '私たちは取引手数料を一切いただきません。', /*We do not charge a transaction fee.*/
-ONBOARD_interface_content__5    :  'あなたは、私たちの**利用者窓口**でブロックチェーンを**直接**操作しています。', /*You are simply using our **interface** to interact **directly with the blockchain**.*/
+ONBOARD_interface_content__5    :  'あなたは、私たちの「利用者窓口」でブロックチェーンを「直接」操作しています。', /*You are simply using our **interface** to interact **directly with the blockchain**.*/
 ONBOARD_interface_content__6    :  '公開鍵（アドレス）を相手に教えると、ＥＴＨやトークンを受け渡し出来る様になります。👍', /*If you send your *public key (address)* to someone, they can send you ETH or tokens. 👍*/
 ONBOARD_interface_content__7    :  '秘密鍵が誰かの手に渡ると、受け取った相手がその口座を自分のものにします。👎', /*If you send your *private key* to someone, they now have full control of your account. 👎*/
 ONBOARD_bank_title__alt         :  'MyCryptoは金融機関にあらず　', /*MyCrypto isn\'t a Bank*/
@@ -144,36 +144,36 @@ ONBOARD_blockchain_content__2   :  '誰が誰にコインをいくら送った�
 ONBOARD_blockchain_content__3   :  '何千もいる特殊なコンピューターを持った人（発掘者）によって記録と管理が行われます。', /*It is stored and maintained by thousands of people (miners) across the globe who have special computers.*/
 ONBOARD_blockchain_content__4   :  'ブロックチェーンのなかのブロックはMyCrypto, MetaMask, Exodus, Mist, Geth, Parityなど至る所で行われている個々の処理や取引で作られています。', /*The blocks in the blockchain are made up of all the individual transactions sent from MyCrypto, MetaMask, Exodus, Mist, Geth, Parity, and everywhere else.*/
 ONBOARD_blockchain_content__5   :  'MyCryptoや[etherscan.io](https://etherscan.io)で残高や処理を見た時、見えるのは私たちのシステムの中ではなく、ブロックチェーンにあるデータです。', /*When you see your balance on MyCrypto.com or view your transactions on [etherscan.io](https://etherscan.io), you are seeing data on the blockchain, not in our personal systems.*/
-ONBOARD_blockchain_content__6   :  'もう一度： **私たちは金融機関ではありません。**', /*Again: **we are not a bank**.*/
-ONBOARD_interface_title__alt    :  'ＭＥＷは共用の利用者窓口　', /*MyCrypto is an Interface*/
-ONBOARD_why_title__alt          :  'でも...なんでそれがそんなに大事？', /*But...why does this matter?*/
+ONBOARD_blockchain_content__6   :  'もう一度： 「私たちは金融機関ではありません。」', /*Again: **we are not a bank**.*/
+ONBOARD_interface_title__alt    :  'MyCryptoは共用の利用者窓口　', /*MyCrypto is an Interface*/
+ONBOARD_why_title__alt          :  'でも...なんでそれがそんなに重要？', /*But...why does this matter?*/
 ONBOARD_why_title               :  'なんで全部読ませる訳？', /*Why are you making me read all this?*/
-ONBOARD_why_content__1          :  'それは私たちに**出来ない**事をわかっていただくためで...', /*Because we need you to understand that we **cannot**...*/
+ONBOARD_why_content__1          :  '私たちに『出来ない』ものをわかっていただく必要があるためです', /*Because we need you to understand that we **cannot**...*/
 ONBOARD_why_content__2          :  '口座にアクセスしてあなたに代わって送金すること。', /*Access your account or send your funds for you X.*/
 ONBOARD_why_content__3          :  '秘密鍵の回復または変更。', /*Recover or change your private key.*/
 ONBOARD_why_content__4          :  'パスワードのリセットまたは回復。', /*Recover or reset your password.*/
 ONBOARD_why_content__5          :  '処理の巻き戻し、取り消しあるいは金額変更。', /*Reverse, cancel, or refund transactions.*/
 ONBOARD_why_content__6          :  '口座の凍結。', /*Freeze accounts.*/
-ONBOARD_why_content__7          :  '**あなた**が、そして**あなただけ**が自分のセキュリテイの全責任を持ちます。', /***You** and **only you** are responsible for your security.*/
+ONBOARD_why_content__7          :  '『あなた』が、そして『あなただけ』が自分のセキュリテイの全責任を持ちます。', /***You** and **only you** are responsible for your security.*/
 ONBOARD_why_content__8          :  '秘密鍵とパスワードを大事に保管してください。秘密鍵は、ニーモニックフレーズ、キーストアファイル、ＵＴＣファイル、ＪＳＯＮファイル、お財布（ワレット）ファイルとも呼ばれることがあります。', /*Be diligent to keep your private key and password safe. Your private key is sometimes called your mnemonic phrase, keystore file, UTC file, JSON file,  wallet file.*/
 ONBOARD_why_content__9          :  'もし秘密鍵やパスワードを忘れると、誰も回復させることができません。', /*If you lose your private key or password, no one can recover it.*/
 ONBOARD_why_content__10         :  'もし、あなたが秘密鍵を詐欺サイトで入力すると、**全ての資産**が盗まれてしまいます。', /*If you enter your private key on a phishing website, you will have **all your funds taken**.*/
 ONBOARD_blockchain_title__alt   :  '一体ブロックチェーンって何？ ', /*WTF is a Blockchain?*/
-ONBOARD_point_title__alt        :  'それじゃＭＥＷは何ができるの？', /*What\'s the Point of MyCrypto then?*/
+ONBOARD_point_title__alt        :  'それじゃ『MyCrypto』は何ができるの？', /*What\'s the Point of MyCrypto then?*/
 ONBOARD_whymyc_title            :  'MyCryptoにできないなら、どうすればいいの？', /*If MyCrypto can\'t do those things, what\'s the point?*/
-ONBOARD_whymyc_content__1       :  'それがブロックチェーンによる分散化の**きも**だからです。', /*Because that is the point of decentralization and the blockchain.*/
+ONBOARD_whymyc_content__1       :  'それがブロックチェーンによる分散化の『本質』だからです。', /*Because that is the point of decentralization and the blockchain.*/
 ONBOARD_whymyc_content__2       :  '自分の資産やお金を動かすときに、金融機関、政府や他の誰かを頼る必要が全くありません。', /*You don\'t have to rely on your bank, government, or anyone else when you want to move your funds.*/
 ONBOARD_whymyc_content__3       :  '自分の資産を守るために、取引所や金融機関のセキュリティを頼る必要もありません。', /*You don\'t have to rely on the security of an exchange or bank to keep your funds safe.*/
 ONBOARD_whymyc_content__4       :  'もし、こういった事には価値がない、と感じるのでしたら、なぜブロックチェーンや仮想通貨に価値があるのかよーく考えて見てください。', /*If you don\'t find these things valuable, ask yourself why you think the blockchain and cryptocurrencies are valuable. 😉*/
 ONBOARD_whymyc_content__5       :  'もし、お気に召さないようでしたら、[Coinbase](https://www.coinbase.com/) や [Blockchain.info](https://blockchain.info/wallet/#/signup)をお使いください。これらは、より身近なＩＤとパスワードを使用しています。', /*If you don\'t like the sound of this, consider using [Coinbase](https://www.coinbase.com/) or [Blockchain.info](https://blockchain.info/wallet/#/signup). They have more familiar accounts with usernames & passwords.*/
-ONBOARD_whymyc_content__6       :  'もし、少し不安だけれどもＭＥＷを使いたければ、[ハードウェアワレットを入手(英語)](https://support.mycrypto.com/hardware-wallets/hardware-wallet-recommendations.html)！', /*If you are scared but want to use MyCrypto, [get a hardware wallet](https://support.mycrypto.com/hardware-wallets/hardware-wallet-recommendations.html)! These keep your keys secure.*/
+ONBOARD_whymyc_content__6       :  'もし、少し不安だけれどもMyCryptoを使いたければ、[ハードウェアワレットを入手(英語)](https://support.mycrypto.com/hardware-wallets/hardware-wallet-recommendations.html)！', /*If you are scared but want to use MyCrypto, [get a hardware wallet](https://support.mycrypto.com/hardware-wallets/hardware-wallet-recommendations.html)! These keep your keys secure.*/
 ONBOARD_why_title__alt          :  'でも...どうして？', /*But...why?*/
 ONBOARD_secure_title            :  '自分自身とその資産の守り方　', /*How To Protect Yourself & Your Funds*/
 ONBOARD_secure_1_title          :  'オンライン詐欺から自分自身を守る方法　', /*How To Protect Yourself from Phishers*/
 ONBOARD_secure_1_content__1     :  'オンライン詐欺師は、MyCrypto、EtherDelta、Paypalやあなたの金融機関のリンクが含まれた個人メッセージを送りつけてきますが、これは偽のサイトです。あなたの情報を盗み、そして資産を盗みます。', /*Phishers send you a message with a link to a website that looks just like MyCrypto, EtherDelta, Paypal, or your bank, but is not the real website. They steal your information and then steal your money.*/
 ONBOARD_secure_1_content__2     :  '[EAL](https://chrome.google.com/webstore/detail/etheraddresslookup/pdknmigbbbhmllnmgdfalmedcmcefdfn)または[MetaMask](https://support.mycrypto.com/migration/moving-from-private-key-to-metamask.html) or [Cryptonite by Metacert](https://chrome.google.com/webstore/detail/cryptonite-by-metacert/keghdcpemohlojlglbiegihkljkgnige). のクローム拡張を使って、これらの悪意のサイトを遮断してください。', /*Install [EAL](https://chrome.google.com/webstore/detail/etheraddresslookup/pdknmigbbbhmllnmgdfalmedcmcefdfn) or [MetaMask](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn) or  to block malicious websites.*/
-ONBOARD_secure_1_content__3     :  'いつも、必ず、ＵＲＬ：「https://mycrypto.com」を確認してください。', /*Always check the URL: `https://mycrypto.com`.*/
-ONBOARD_secure_1_content__4     :  'ＵＲＬバーに、 `MyCrypto, Inc.`と緑色で表示されていることを必ず確認してください。', /**/
+ONBOARD_secure_1_content__3     :  'いつも、必ず、URL：「https://mycrypto.com」を確認してください。', /*Always check the URL: `https://mycrypto.com`.*/
+ONBOARD_secure_1_content__4     :  'URLバーに、 `MyCrypto, Inc.`と緑色で表示されていることを必ず確認してください。', /**/
 ONBOARD_secure_1_content__5     :  'ｅメール、Slack、Reddit、Twitterやその他から送られてくるメッセージやリンクを信用しないでください。', /*Do not trust messages or links sent to you randomly via email, Slack, Reddit, Twitter, etc.*/
 ONBOARD_secure_1_content__6     :  '情報を入力する前に、常に直接サイトを参照してから閲覧してください。ｅメールやメッセージのリンクを押してから情報を入力しないでください。', /*Always navigate directly to a site before you enter information. Do not enter information after clicking a link from a message or email.*/
 ONBOARD_secure_1_content__7     :  '[AdBlockerを導入](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?hl=ja)し、サーチエンジンの広告（例：グーグル）をクリックしないでください。', /*[Install an AdBlocker](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?hl=en) and do not click ads on your search engine (e.g. Google).*/
@@ -198,13 +198,13 @@ ONBOARD_final_title             :  'オーライ！講義終了！', /*Alright, 
 ONBOARD_final_subtitle          :  'こんな風で申し訳ありません。次はこれです！', /*Sorry for being like this. Onwards!*/
 ONBOARD_final_content__1        :  'お財布を作る', /**/
 ONBOARD_final_content__2        :  'ハードウェア・ワレットを手に入れる', /*Get a hardware wallet*/
-ONBOARD_final_content__3        :  'ＭＥＷとＭｅｔａｍａｓｋの設定方法', /*How to Set up MyCrypto + MetaMask*/
-ONBOARD_final_content__4        :  'オフライン/手元でのＭＥＷの使い方', /*How to Run MyCrypto Offline / Locally*/
+ONBOARD_final_content__3        :  'MyCryptoとMetaMaskの設定方法', /*How to Set up MyCrypto + MetaMask*/
+ONBOARD_final_content__4        :  'オフライン/手元でのMyCryptoの使い方', /*How to Run MyCrypto Offline / Locally*/
 ONBOARD_final_content__5        :  'Ledgerハードウェア・ワレットでの送出方法', /*How to Send via Ledger hardware wallet*/
 ONBOARD_final_content__6        :  'TREZORハードウェア・ワレットでの送出方法', /*How to Send via TREZOR hardware wallet*/
 ONBOARD_final_content__7        :  'MetaMaskでの送出方法', /*How to Send via MetaMask*/
-ONBOARD_final_content__8        :  'もっと教えて、連絡したい', /*Learn More or Contact Us*/
-ONBOARD_final_content__9        :  'もう勘弁、お願い、早く使わせて。', /*OMG, please just let me send FFS.*/
+ONBOARD_final_content__8        :  '詳しく調べる、連絡する', /*Learn More or Contact Us*/
+ONBOARD_final_content__9        :  'もう勘弁、早く使わせてください。', /*OMG, please just let me send FFS.*/
 ONBOARD_resume                  :  '前回スライドを最後までお読みになっていないようです。プロのアドバイス：スライドを全部読みましょう😉',/*It looks like you didn\'t finish reading through these slides last time. ProTip: Finish reading through the slides 😉*/
 
 /* Old */
@@ -223,7 +223,7 @@ ADD_Label_8                 : 'パスワード（任意）: ',
 ADD_Ledger_0a               : 'セキュアコネクション（SSL)で再度MyCryptoを開いてください。 ',
 ADD_Ledger_0b               : 'MyCryptoを再度「Chrome」(https://www.google.com/chrome/browser/desktop/) あるいは [Opera](https://www.opera.com/)で開いてください。 ',
 ADD_Ledger_1                : '自分の Ledger Wallet　を接続する ',
-ADD_Ledger_2                : 'イサリアムアプリケーション（あるいはコントラクトアプリケーション）を開く　。 ',
+ADD_Ledger_2                : 'イサリアムアプリケーション（あるいは契約アプリケーション）を開く　。 ',
 ADD_Ledger_2_Exp            : 'Expanseアプリケーション（または契約アプリケーション）を開きます。',
 ADD_Ledger_2_Ubq            : 'Ubiqアプリケーション（または契約アプリケーション）を開きます。',
 ADD_Ledger_3                : '設定中で、ブラウザサポートが有効にされていることを確認してください。 ',
@@ -252,11 +252,11 @@ BULK_SuccessMsg             : '成功！お財布が作成されました。 ',
 
 CONTRACT_ByteCode           : 'バイトコード ',
 CONTRACT_Interact_CTA       : '機能を一つ選ぶ ',
-CONTRACT_Interact_Title     : '契約の読込や書込 ',
+CONTRACT_Interact_Title     : '契約コードの読込や書込 ',
 CONTRACT_Json               : 'ABI / JSON インターフェース ',
 CONTRACT_Read               : '読み取り ',
-CONTRACT_Title              : '契約アドレス ',
-CONTRACT_Title_2            : '既存の契約を選択 ',
+CONTRACT_Title              : '契約コードアドレス ',
+CONTRACT_Title_2            : '既存の契約コードを選択 ',
 CONTRACT_Write              : '書き込み ',
 
 CX_error_1                  : 'お財布が保存されていません。["Add Wallet"](/cx-wallet.html#add-wallet)をクリックして追加してください。 ',
@@ -410,14 +410,14 @@ NAV_AddWallet               : 'お財布の追加 ',
 NAV_BulkGenerate            : 'バルク作成 ',
 NAV_CheckTxStatus           : '処理状況を確認',
 NAV_Contact                 : '連絡する ',
-NAV_Contracts               : '契約 ',
-NAV_DeployContract          : '契約を展開 ',
+NAV_Contracts               : '契約コード ',
+NAV_DeployContract          : '契約コードを展開 ',
 NAV_DomainSale              : 'ドメイン販売', /*DomainSale*/
 NAV_ENS                     : 'ＥＮＳ',
 NAV_GenerateWallet_alt      : 'お財布の作成 ', /*New Wallet*/
 NAV_GenerateWallet          : 'お財布の作成 ',
 NAV_Help                    : 'ヘルプ ',
-NAV_InteractContract        : '契約を操作 ',
+NAV_InteractContract        : '契約コードを操作 ',
 NAV_Multisig                : '多重署名 ',
 NAV_MyWallets               : '自分のお財布 ',
 NAV_Offline                 : 'オフライン送出 ',
@@ -448,11 +448,11 @@ OFFLINE_Step2_Label_2       : '送出する値/総量 ',
 OFFLINE_Step2_Label_3       : 'ガス価格 ',
 OFFLINE_Step2_Label_3b      : 'これは、ステップ１でオンラインコンピューターに表示されたものです。 ',
 OFFLINE_Step2_Label_4       : 'ガスリミット ',
-OFFLINE_Step2_Label_4b      : 'ガスリミットの既定値は21000です。契約や付加データーを送出する場合には、これらの値は　異なるものにする必要があります。使用されなかったガスは全て返却されます。 ',
+OFFLINE_Step2_Label_4b      : 'ガスリミットの既定値は21000です。契約コードや付加データーを送出する場合には、これらの値は　異なるものにする必要があります。使用されなかったガスは全て返却されます。 ',
 OFFLINE_Step2_Label_5       : 'Nonce ',
 OFFLINE_Step2_Label_5b      : 'これらは、ステップ１でオンラインコンピューターに表示されたものです。 ',
 OFFLINE_Step2_Label_6       : 'データ ',
-OFFLINE_Step2_Label_6b      : 'これは、任意の付加データです。契約に対してトランザクションを送出する際などでよく使われます。 ',
+OFFLINE_Step2_Label_6b      : 'これは、任意の付加データです。契約コードに対してトランザクションを送出する際などでよく使われます。 ',
 OFFLINE_Step2_Label_7       : '秘密鍵/JSONの入力/選択 ',
 OFFLINE_Step3_Title         : 'ステップ３: トランザクションの送出/公開(オンラインコンピューター) ',
 OFFLINE_Step3_Label_1       : 'ステップ２で署名されたトランザクションをここにペーストして「トランザクションの送出」ボタンをクリックする。 ',
@@ -518,7 +518,7 @@ SWAP_progress_5             : "注文完了 ",
 SWAP_order_CTA              : "お送りいただきたいのは ", // Please send 1 ETH...
 SWAP_unlock                 : "このページから直接ETHあるいはトークンを送出するためには、お財布を解錠してください。",
 
-TOKEN_Addr                  : 'トークン契約アドレス： ',
+TOKEN_Addr                  : 'トークン契約コードアドレス： ',
 TOKEN_Symbol                : 'トークンシンボル： ',
 TOKEN_Dec                   : 'ケタ数： ',
 TOKEN_show                  : '全てのトークンを表示 ',
@@ -550,8 +550,8 @@ tx_foundInPending_2         : '現在待機中です（発掘待ち）。',
 tx_foundInPending_3         : 'この処理を取り消す、あるいは置き換えることができます。下記のお財布をアンロックしてください。 ',
 tx_FoundOnChain             : '処理が見つかりました',
 tx_FoundOnChain_1           : 'あなたの待機中の処理は発掘され、ブロックチェーンに配置されました。',
-tx_FoundOnChain_2           : '**もし赤い `( ! )`, `BAD INSTRUCTION` あるいは `OUT OF GAS` のエラーメッセージを見つけたら**, これは、処理送出に失敗したということです。処理の取り消しや置き換えはできません。代わりに、新しい処理を送出してください。 "Out of Gas" エラーの場合には, ガスリミットをはじめに指定した値の倍にしてください。',
-tx_FoundOnChain_3           : '**何もエラーメッセージが返ってこなければ、あなたの処理は正しく送出されています。** ETHあるいはトークンは、送ろうとしたあて先の場所にあります。 もし、ETHやトークンが他のお財布や交換所のお財布に見つからず、処理を開始してから２４時間以上経っていたら、 [そのサービスに連絡](https://support.mycrypto.com/diving-deeper/ethereum-list-of-support-and-communities.html)してください。状況を確認してもらうために、自分の処理のリンクをうまく知らせてください。',
+tx_FoundOnChain_2           : '「もし赤い `( ! )`, `BAD INSTRUCTION` あるいは `OUT OF GAS` のエラーメッセージを見つけたら」, これは、処理送出に失敗したということです。処理の取り消しや置き換えはできません。代わりに、新しい処理を送出してください。 "Out of Gas" エラーの場合には, ガスリミットをはじめに指定した値の倍にしてください。',
+tx_FoundOnChain_3           : '「何もエラーメッセージが返ってこなければ、あなたの処理は正しく送出されています。」 ETHあるいはトークンは、送ろうとしたあて先の場所にあります。 もし、ETHやトークンが他のお財布や交換所のお財布に見つからず、処理を開始してから２４時間以上経っていたら、 [そのサービスに連絡](https://support.mycrypto.com/diving-deeper/ethereum-list-of-support-and-communities.html)してください。状況を確認してもらうために、自分の処理のリンクをうまく知らせてください。',
 tx_notFound                 : '対象の処理が見つかりません',
 tx_notFound_1               : 'この処理は、現在接続中の処理プールの中にありませんでした。',
 tx_notFound_2               : 'もし今、処理を送出した直後であれば、１５秒待ってから「処理状況を確認」ボタンを再度押してください。',
