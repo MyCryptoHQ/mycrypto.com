@@ -102,7 +102,7 @@ ENS_WrongAddress_2              :  'アドレスを指定してお財布を解�
 EOS_01                          :  '『ＥＯＳの鍵対の生成』', /* **Generate EOS Key-pair** */
 EOS_02                          :  '『ＥＯＳの鍵を登録／転写する』', /* **Register / Map your EOS Key** */
 EOS_03                          :  '`register`を選択する', /*Select `register`*/
-EOS_04                          :  '「ＥＯＳの公開鍵」を入力する　<---　ＥＯＳの公開鍵に注意！', /*Enter your **EOS Public Key** <--- CAREFUL! EOS PUBLIC KEY!*/
+EOS_04                          :  '『ＥＯＳの公開鍵』を入力する　<---　ＥＯＳの公開鍵に注意！', /*Enter your **EOS Public Key** <--- CAREFUL! EOS PUBLIC KEY!*/
 EOS_05                          :  '送出ページでＥＯＳの契約コードに入金', /*Fund EOS Contract on Send Page*/
 EOS_06                          :  'Ether/トークンの送出ページに移動', /*Go to Send Page*/
 EOS_07                          :  '解錠中のお財布と同じものをここで解錠', /*Unlock same wallet you are unlocking here.*/
@@ -132,7 +132,7 @@ ONBOARD_interface_content__1    :  'MyCryptoを使って口座を作る時、一
 ONBOARD_interface_content__2    :  'これらの暗号鍵の操作は全て自分のコンピューターのブラウザの中で行われます。', /*The handling of your keys happens entirely on your computer, inside your browser.*/
 ONBOARD_interface_content__3    :  '私たちは、秘密鍵、パスワードや口座情報の送信や保管を一切いたしません。', /*We never transmit, receive or store your private key, password, or other account information.*/
 ONBOARD_interface_content__4    :  '私たちは取引手数料を一切いただきません。', /*We do not charge a transaction fee.*/
-ONBOARD_interface_content__5    :  'あなたは、私たちの「利用者窓口」でブロックチェーンを「直接」操作しています。', /*You are simply using our **interface** to interact **directly with the blockchain**.*/
+ONBOARD_interface_content__5    :  'あなたは、私たちの『利用者窓口』でブロックチェーンを『直接』操作しています。', /*You are simply using our **interface** to interact **directly with the blockchain**.*/
 ONBOARD_interface_content__6    :  '公開鍵（アドレス）を相手に教えると、ＥＴＨやトークンを受け渡し出来る様になります。👍', /*If you send your *public key (address)* to someone, they can send you ETH or tokens. 👍*/
 ONBOARD_interface_content__7    :  '秘密鍵が誰かの手に渡ると、受け取った相手がその口座を自分のものにします。👎', /*If you send your *private key* to someone, they now have full control of your account. 👎*/
 ONBOARD_bank_title__alt         :  'MyCryptoは金融機関にあらず　', /*MyCrypto isn\'t a Bank*/
@@ -144,7 +144,7 @@ ONBOARD_blockchain_content__2   :  '誰が誰にコインをいくら送った�
 ONBOARD_blockchain_content__3   :  '何千もいる特殊なコンピューターを持った人（発掘者）によって記録と管理が行われます。', /*It is stored and maintained by thousands of people (miners) across the globe who have special computers.*/
 ONBOARD_blockchain_content__4   :  'ブロックチェーンのなかのブロックはMyCrypto, MetaMask, Exodus, Mist, Geth, Parityなど至る所で行われている個々の処理や取引で作られています。', /*The blocks in the blockchain are made up of all the individual transactions sent from MyCrypto, MetaMask, Exodus, Mist, Geth, Parity, and everywhere else.*/
 ONBOARD_blockchain_content__5   :  'MyCryptoや[etherscan.io](https://etherscan.io)で残高や処理を見た時、見えるのは私たちのシステムの中ではなく、ブロックチェーンにあるデータです。', /*When you see your balance on MyCrypto.com or view your transactions on [etherscan.io](https://etherscan.io), you are seeing data on the blockchain, not in our personal systems.*/
-ONBOARD_blockchain_content__6   :  'もう一度： 「私たちは金融機関ではありません。」', /*Again: **we are not a bank**.*/
+ONBOARD_blockchain_content__6   :  'もう一度： 『私たちは金融機関ではありません。』', /*Again: **we are not a bank**.*/
 ONBOARD_interface_title__alt    :  'MyCryptoは共用の利用者窓口　', /*MyCrypto is an Interface*/
 ONBOARD_why_title__alt          :  'でも...なんでそれがそんなに重要？', /*But...why does this matter?*/
 ONBOARD_why_title               :  'なんで全部読ませる訳？', /*Why are you making me read all this?*/
@@ -172,7 +172,7 @@ ONBOARD_secure_title            :  '自分自身とその資産の守り方　',
 ONBOARD_secure_1_title          :  'オンライン詐欺から自分自身を守る方法　', /*How To Protect Yourself from Phishers*/
 ONBOARD_secure_1_content__1     :  'オンライン詐欺師は、MyCrypto、EtherDelta、Paypalやあなたの金融機関のリンクが含まれた個人メッセージを送りつけてきますが、これは偽のサイトです。あなたの情報を盗み、そして資産を盗みます。', /*Phishers send you a message with a link to a website that looks just like MyCrypto, EtherDelta, Paypal, or your bank, but is not the real website. They steal your information and then steal your money.*/
 ONBOARD_secure_1_content__2     :  '[EAL](https://chrome.google.com/webstore/detail/etheraddresslookup/pdknmigbbbhmllnmgdfalmedcmcefdfn)または[MetaMask](https://support.mycrypto.com/migration/moving-from-private-key-to-metamask.html) or [Cryptonite by Metacert](https://chrome.google.com/webstore/detail/cryptonite-by-metacert/keghdcpemohlojlglbiegihkljkgnige). のクローム拡張を使って、これらの悪意のサイトを遮断してください。', /*Install [EAL](https://chrome.google.com/webstore/detail/etheraddresslookup/pdknmigbbbhmllnmgdfalmedcmcefdfn) or [MetaMask](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn) or  to block malicious websites.*/
-ONBOARD_secure_1_content__3     :  'いつも、必ず、URL：「https://mycrypto.com」を確認してください。', /*Always check the URL: `https://mycrypto.com`.*/
+ONBOARD_secure_1_content__3     :  'いつも、必ず、URL：『https://mycrypto.com』を確認してください。', /*Always check the URL: `https://mycrypto.com`.*/
 ONBOARD_secure_1_content__4     :  'URLバーに、 `MyCrypto, Inc.`と緑色で表示されていることを必ず確認してください。', /**/
 ONBOARD_secure_1_content__5     :  'ｅメール、Slack、Reddit、Twitterやその他から送られてくるメッセージやリンクを信用しないでください。', /*Do not trust messages or links sent to you randomly via email, Slack, Reddit, Twitter, etc.*/
 ONBOARD_secure_1_content__6     :  '情報を入力する前に、常に直接サイトを参照してから閲覧してください。ｅメールやメッセージのリンクを押してから情報を入力しないでください。', /*Always navigate directly to a site before you enter information. Do not enter information after clicking a link from a message or email.*/
@@ -209,7 +209,7 @@ ONBOARD_resume                  :  '前回スライドを最後までお読み�
 
 /* Old */
 ADD_DigitalBitbox_0a        : 'セキュアコネクション（SSL)で再度MyCryptoを開いてください。 ',
-ADD_DigitalBitbox_0b        : 'MyCryptoを再度「Chrome」(https://www.google.com/chrome/browser/desktop/) あるいは [Opera](https://www.opera.com/)で開いてください。 ',
+ADD_DigitalBitbox_0b        : 'MyCryptoを再度『Chrome』(https://www.google.com/chrome/browser/desktop/) あるいは [Opera](https://www.opera.com/)で開いてください。 ',
 ADD_DigitalBitbox_scan      : 'DigitalBitboxに接続する ',
 ADD_Label_1                 : 'ご希望の操作方法をお選びください ',
 ADD_Label_2                 : 'ニックネームの作成： ',
@@ -221,7 +221,7 @@ ADD_Label_6_short           : 'アンロック ',
 ADD_Label_7                 : 'アカウント追加 ',
 ADD_Label_8                 : 'パスワード（任意）: ',
 ADD_Ledger_0a               : 'セキュアコネクション（SSL)で再度MyCryptoを開いてください。 ',
-ADD_Ledger_0b               : 'MyCryptoを再度「Chrome」(https://www.google.com/chrome/browser/desktop/) あるいは [Opera](https://www.opera.com/)で開いてください。 ',
+ADD_Ledger_0b               : 'MyCryptoを再度『Chrome』(https://www.google.com/chrome/browser/desktop/) あるいは [Opera](https://www.opera.com/)で開いてください。 ',
 ADD_Ledger_1                : '自分の Ledger Wallet　を接続する ',
 ADD_Ledger_2                : 'イサリアムアプリケーション（あるいは契約アプリケーション）を開く　。 ',
 ADD_Ledger_2_Exp            : 'Expanseアプリケーション（または契約アプリケーション）を開きます。',
@@ -262,7 +262,7 @@ CONTRACT_Write              : '書き込み ',
 CX_error_1                  : 'お財布が保存されていません。["Add Wallet"](/cx-wallet.html#add-wallet)をクリックして追加してください。 ',
 CX_quicksend                : '簡易送信 ', // if no appropriate translation, just use "Send"
 CX_Tagline                  : 'オープンソース JavaScript クライアントサイド Etherお財布 Chrome Extension ',
-CX_Warning_1                : '必ずここに保管するすべてのお財布の「外部バックアップ」を作成してください。このChrome Extensionでは、再導入などで、データが保存されずの消失することが頻繁に起こります。このエクステンションは容易な操作を提供するのみで、「バックアップ」は行いません。 ',
+CX_Warning_1                : '必ずここに保管するすべてのお財布の『外部バックアップ』を作成してください。このChrome Extensionでは、再導入などで、データが保存されずの消失することが頻繁に起こります。このエクステンションは容易な操作を提供するのみで、『バックアップ』は行いません。 ',
 
 decrypt_Access              : 'どの方法でお財布を操作しますか？ ',
 decrypt_Title               : '秘密鍵形式の選択： ',
@@ -340,8 +340,8 @@ FOOTER_2                    : '投げ銭に感謝致します！: ',
 FOOTER_3                    : 'クライアントサイドお財布制作 ',
 FOOTER_4                    : '免責事項 ',
 
-GAS_PRICE_Desc              : 'ガス価格は、ガスの一単位にかかるの料金のことです。 「処理料金 = ガス価格 ＊ ガスリミット」で算出され、自分の処理をブロックに配置するためにマイナーに支払う手数料です。ガス価格が高いほど処理は早く行われますが、料金は高くなります。デファルトは 「20 GWEI」です。', /*Gas Price is the amount you pay per unit of gas. `TX fee = gas price * gas limit`. Higher the gas price = faster transaction, but more expensive. Check [Eth Gas Station](https://ethgasstation.info/) for gas price recommendation.*/
-GAS_LIMIT_Desc              : 'ガスリミットは、その処理のために送出するガスの総量です。「処理料金 = ガス価格 ＊ ガスリミット」で算出され、自分の処理をブロックに配置するための料金として支払われます。 この数字を増やしても、自分の処理が早くなることはありません。ETHの送出 = 「２１０００」、トークンの送出 = ~「２０００００」が目安になります。', /*Gas limit is the amount of gas to send with your TX. `TX fee` = gas price * gas limit & is paid to miners for including your TX in a block. Increasing this number will not get your TX mined faster. Sending ETH = `21000`. Sending Tokens = ~`200000`.*/
+GAS_PRICE_Desc              : 'ガス価格は、ガスの一単位にかかるの料金のことです。 『処理料金 = ガス価格 ＊ ガスリミット』で算出され、自分の処理をブロックに配置するためにマイナーに支払う手数料です。ガス価格が高いほど処理は早く行われますが、料金は高くなります。デファルトは 『20 GWEI『です。', /*Gas Price is the amount you pay per unit of gas. `TX fee = gas price * gas limit`. Higher the gas price = faster transaction, but more expensive. Check [Eth Gas Station](https://ethgasstation.info/) for gas price recommendation.*/
+GAS_LIMIT_Desc              : 'ガスリミットは、その処理のために送出するガスの総量です。『処理料金 = ガス価格 ＊ ガスリミット』で算出され、自分の処理をブロックに配置するための料金として支払われます。 この数字を増やしても、自分の処理が早くなることはありません。ETHの送出 = 『21000』、トークンの送出 = ~『200000』が目安になります。', /*Gas limit is the amount of gas to send with your TX. `TX fee` = gas price * gas limit & is paid to miners for including your TX in a block. Increasing this number will not get your TX mined faster. Sending ETH = `21000`. Sending Tokens = ~`200000`.*/
 /* Gen Wallet Updates */
 GEN_desc                    : '複数のお財布の作成をこのタブで行う事ができます： ',
 GEN_Help_1                  : 'この', /* Use your */
@@ -441,7 +441,7 @@ NONCE_Desc                  : 'このnonceは、指定のアドレスから送�
 OFFLINE_Desc                : 'オフライントランザクションの作成は、3ステップで行う事ができます。ステップ１と３はオンラインのコンピューター上で行い、ステップ２は、オフライン、あるいは物理的にネットワークと切断されたコンピューターを用います。これにより、秘密鍵が、インターネットに接続したデバイスと接触する事を避ける事ができます。 ',
 OFFLINE_Step1_Button        : '情報生成 ',
 OFFLINE_Step1_Label_1       : '送出元アドレス： ',
-OFFLINE_Step1_Label_2       : 'ノート：これは、送出元アドレスであって、送出先アドレスではありません。操作元アカウントからは「Nonce」が生成されます。切断されたコンピューターを使用する場合に、このアドレスはコールドストレージのアカウントのものになります。 ',
+OFFLINE_Step1_Label_2       : 'ノート：これは、送出元アドレスであって、送出先アドレスではありません。操作元アカウントからは『Nonce』が生成されます。切断されたコンピューターを使用する場合に、このアドレスはコールドストレージのアカウントのものになります。 ',
 OFFLINE_Step2_Title         : 'ステップ2: 情報生成 (オフラインコンピューター) ',
 OFFLINE_Step2_Label_1       : '送出先アドレス： ',
 OFFLINE_Step2_Label_2       : '送出する値/総量 ',
@@ -455,7 +455,7 @@ OFFLINE_Step2_Label_6       : 'データ ',
 OFFLINE_Step2_Label_6b      : 'これは、任意の付加データです。契約コードに対してトランザクションを送出する際などでよく使われます。 ',
 OFFLINE_Step2_Label_7       : '秘密鍵/JSONの入力/選択 ',
 OFFLINE_Step3_Title         : 'ステップ３: トランザクションの送出/公開(オンラインコンピューター) ',
-OFFLINE_Step3_Label_1       : 'ステップ２で署名されたトランザクションをここにペーストして「トランザクションの送出」ボタンをクリックする。 ',
+OFFLINE_Step3_Label_1       : 'ステップ２で署名されたトランザクションをここにペーストして『トランザクションの送出』ボタンをクリックする。 ',
 OFFLINE_Title               : 'オフライントランザクションを作成し送出 ',
 OFFLLINE_Step1_Title        : 'ステップ1: 情報生成 (オンラインコンピューター) ',
 
@@ -526,7 +526,7 @@ TOKEN_hide                  : 'トークンを隠す ',
 
 TRANS_advanced              : '+上級：ガスあるいはデータを追加してください ',
 TRANS_data                  : 'データ： ',
-TRANS_desc                  : 'トークンを送出するには「トークン送出」のタブを選択してください。 ',
+TRANS_desc                  : 'トークンを送出するには『トークン送出』のタブを選択してください。 ',
 TRANS_gas                   : 'ガスリミット： ',
 TRANS_sendInfo              : '21000ガスを使用する標準トランザクションは、0.000441 ETHを消費します。迅速な処理を行うために、若干最小量よりも多めの0.000000021 ETHのガスを使用します。当サービスでは、トランザクション料金は徴収いたしません。 ',
 
@@ -550,16 +550,16 @@ tx_foundInPending_2         : '現在待機中です（発掘待ち）。',
 tx_foundInPending_3         : 'この処理を取り消す、あるいは置き換えることができます。下記のお財布をアンロックしてください。 ',
 tx_FoundOnChain             : '処理が見つかりました',
 tx_FoundOnChain_1           : 'あなたの待機中の処理は発掘され、ブロックチェーンに配置されました。',
-tx_FoundOnChain_2           : '「もし赤い `( ! )`, `BAD INSTRUCTION` あるいは `OUT OF GAS` のエラーメッセージを見つけたら」, これは、処理送出に失敗したということです。処理の取り消しや置き換えはできません。代わりに、新しい処理を送出してください。 "Out of Gas" エラーの場合には, ガスリミットをはじめに指定した値の倍にしてください。',
+tx_FoundOnChain_2           : '「もし赤い `( ! )`, `BAD INSTRUCTION` あるいは `OUT OF GAS` のエラーメッセージを見つけたら」これは、処理送出に失敗したということです。処理の取り消しや置き換えはできません。代わりに、新しい処理を送出してください。『Out of Gas』エラーの場合には, ガスリミットをはじめに指定した値の倍にしてください。',
 tx_FoundOnChain_3           : '「何もエラーメッセージが返ってこなければ、あなたの処理は正しく送出されています。」 ETHあるいはトークンは、送ろうとしたあて先の場所にあります。 もし、ETHやトークンが他のお財布や交換所のお財布に見つからず、処理を開始してから２４時間以上経っていたら、 [そのサービスに連絡](https://support.mycrypto.com/diving-deeper/ethereum-list-of-support-and-communities.html)してください。状況を確認してもらうために、自分の処理のリンクをうまく知らせてください。',
 tx_notFound                 : '対象の処理が見つかりません',
 tx_notFound_1               : 'この処理は、現在接続中の処理プールの中にありませんでした。',
-tx_notFound_2               : 'もし今、処理を送出した直後であれば、１５秒待ってから「処理状況を確認」ボタンを再度押してください。',
+tx_notFound_2               : 'もし今、処理を送出した直後であれば、１５秒待ってから『処理状況を確認』ボタンを再度押してください。',
 tx_notFound_3               : '別の処理プールで発掘待ちになっているかもしれません。',
 tx_notFound_4               : '右上の下展開メニューから、別のノードを選択してください。 (例： `ETH (Etherscan.io)` or `ETH (Infura.io)` or `ETH (MyCrypto)`) から選んで再度確認する。',
 tx_Summary                  : '数日後に処理状況を確認した場合をのぞいて、大量の処理発生時(ICO期間など)には、数時間処理が遅れる場合があります。本ツールは、そのような状況において処理待ちの処理を探し出し取り消す、あるいは更新する機能を提供します。＊＊これは特殊な操作で、処理プールが満杯の場合にのみ有効です。  [このツールに関しては、こちらを参考にしてください。](https://support.mycrypto.com/transactions/check-status-of-ethereum-transaction.html)**',
 
-TXFEE_Desc                  : 'この処理料金は自分の処理をブロックに配置するためにマイナーに支払われます。「ガスリミット」＊「ガス価格」で算出されます。 [GWEI -> ETHの単位変換はこちらです。](https://mycrypto.com/helpers.html)',　/*The TX Fee is paid to miners for including your TX in a block. It is the `gas limit` * `gas price`. [You can convert GWEI -> ETH here](https://mycrypto.com/helpers.html)*/
+TXFEE_Desc                  : 'この処理料金は自分の処理をブロックに配置するためにマイナーに支払われます。『ガスリミット』＊『ガス価格』で算出されます。 [GWEI -> ETHの単位変換はこちらです。](https://mycrypto.com/helpers.html)',　/*The TX Fee is paid to miners for including your TX in a block. It is the `gas limit` * `gas price`. [You can convert GWEI -> ETH here](https://mycrypto.com/helpers.html)*/
 
 VIEWWALLET_HidePrivKey      : '(hide)',
 VIEWWALLET_ShowPrivKey      : '(show)',
@@ -595,7 +595,7 @@ x_Mnemonic                  : 'ニーモニック文節 ',
 x_ParityPhrase              : 'パリティ文節 ',
 x_Password                  : 'パスワード ',
 x_Print                     : 'お財布紙情報を印刷 ',
-x_PrintDesc                 : 'アドバイス: プリンターが接続されていなくても、「印刷」をクリックしてPDFで保存できます。 ',
+x_PrintDesc                 : 'アドバイス: プリンターが接続されていなくても、『印刷』をクリックしてPDFで保存できます。 ',
 x_PrintShort                : '印刷 ',
 x_PrivKey                   : '秘密鍵（未暗号化） ',
 x_PrivKey2                  : '秘密鍵 ',
