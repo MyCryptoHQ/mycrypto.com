@@ -117,7 +117,7 @@
                target="_blank"
                rel="noopener noreferrer">
                  <p>LATEST</p>
-                 WTF is MyCrypto?
+                 What is MyCrypto?
             </a>
           </span>
 
