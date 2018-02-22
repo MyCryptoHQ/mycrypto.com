@@ -62,7 +62,7 @@
         Disclaimer
       </a>
       <span style="margin-left: 1em">
-        v3.12.0
+        v3.13.0
       </span>
     </p>
   </div>
