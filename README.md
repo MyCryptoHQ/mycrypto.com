@@ -1,20 +1,13 @@
 ### MyCrypto
 
-- [https://mycrypto.com/](https://mycrypto.com/)
-- Support
-    - [https://support.mycrypto.com/](https://support.mycrypto.com/)
-- Twitter
-    - [https://twitter.com/mycrypto](https://twitter.com/mycrypto)
-- Blog
-    - [https://medium.com/@mycrypto]
-- Github
-    - [https://github.com/MyCryptoHQ]
-- Reddit
-    - [https://www.reddit.com/r/MyCrypto]
-- Facebook
-    - [https://www.facebook.com/MyCryptoHQ]
-- Linkedin
-    - [https://www.linkedin.com/company/mycrypto]
+- [Web](https://mycrypto.com/)
+- [Support](https://support.mycrypto.com/)
+- [Twitter](https://twitter.com/mycrypto)
+- [Blog](https://medium.com/@mycrypto)
+- [Github](https://github.com/MyCryptoHQ)
+- [Reddit](https://www.reddit.com/r/MyCrypto)
+- [Facebook](https://www.facebook.com/MyCryptoHQ)
+- [LinkedIn](https://www.linkedin.com/company/mycrypto)
 
 
 ### Download the Latest Release
@@ -40,11 +33,12 @@ $ npm install
 ```
 
 ```
-$ gulp
+$ npm run dev
 ```
 
-Gulp will auto-build it upon save.
+Open the resulting `dist/index.html` file in your browser.
 
+Gulp will auto-build it upon save.
 
 #### To Prep for Production
 ```
@@ -54,8 +48,6 @@ $ gulp prep
 ```
 $ gulp zipit
 ```
-
-
 
 #### License
 
