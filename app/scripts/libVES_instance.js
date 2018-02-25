@@ -1,5 +1,5 @@
 libVES.instance = function() {
-    var app = "MyEtherWallet";
+    var app = "MyCrypto";
     var domain = "cryptoWallets";
     libVES.Domain[domain] = {
 	vaultRefToUser: function(vaultRef,VES) {
