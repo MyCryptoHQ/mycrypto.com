@@ -169,7 +169,7 @@
       </div>
       <div class="ves_info_links">
         <a href="https://www.vesvault.com" target="_blank" translate="x_VES_link_vesvault">Visit VESvault to learn more</a> &nbsp; &nbsp; &nbsp;
-        <a href="https://wallet.ves.world/assets/download/VES-Wallet-Marketing.pdf" target="_blank" translate="x_VES_link_download">Download MyEtherWalletWithVES overview</a><br/><br/>
+        <a href="https://wallet.ves.world/assets/download/VES-Wallet-Marketing.pdf" target="_blank" translate="x_VES_link_download">Download VES integration overview</a><br/><br/>
       </div>
       <a tabindex="0" role="button"
          class="ves_link ves_cancel_link"
