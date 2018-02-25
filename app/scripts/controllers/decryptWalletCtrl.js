@@ -143,7 +143,7 @@ var decryptWalletCtrl = function($scope, $sce, walletService) {
             try {
                 globalFuncs.VES_getExtId(JSON.stringify(JSON.parse($fileContent))).then(function(extId) {
                     $scope.ves_extId = extId;
-                    var myVES = MEW_libVES();
+                    var myVES = libVES.instance();
                     $scope.ves_status = 'loading';
                     $scope.$apply();
                     myVES.getFileItem({domain:myVES.domain,externalId:extId}).then(function(vaultItem) {
@@ -267,7 +267,7 @@ var decryptWalletCtrl = function($scope, $sce, walletService) {
                 try{
                     if ($scope.ves_exists || !document.getElementsByClassName('ves_backup_chkbx')[0].checked) throw null;
                     $scope.ves_status = 'starting';
-                    return MEW_libVES().delegate().then(function(myVES) {
+                    return libVES.instance().delegate().then(function(myVES) {
                         $scope.ves_status = 'loading';
                         $scope.$apply();
                         return myVES.putValue({"domain":myVES.domain,"externalId":$scope.ves_extId},$scope.filePassword).then(function(vi) {
@@ -408,7 +408,7 @@ var decryptWalletCtrl = function($scope, $sce, walletService) {
     };
     $scope.ves_retrieve = function () {
         $scope.ves_status = 'starting';
-        MEW_libVES().delegate().then(function(myVES) {
+        libVES.instance().delegate().then(function(myVES) {
             $scope.ves_status = 'loading';
             $scope.$apply();
             myVES.getValue({"domain":myVES.domain,"externalId":$scope.ves_extId}).then(function(value) {

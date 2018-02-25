@@ -812,7 +812,7 @@ x_VES_retrieve_loading          :  'Retrieving your wallet password with VES...'
 x_VES_retrieve_ok               :  'Your wallet password was successfully retrieved with VES.',
 x_VES_retrieve_error            :  'Your wallet password could not be retrieved with VES.',
 x_VES_link_vesvault             :  'Visit VESvault to learn more',
-x_VES_link_download             :  'Download MyEtherWalletWithVES overview',
+x_VES_link_download             :  'VES integration overview',
 x_VES_retrieve1                 :  'Retrieve your wallet password with VES',
 x_VES_retrieve2                 :  'The password for this wallet is not yet backed up with VES.',
 x_VES_retrieve3                 :  'Back it up when unlocking the wallet',

@@ -53,7 +53,7 @@ var walletGenCtrl = function($scope) {
             case 'ok': $scope.ves = true; return;
         }
         $scope.ves_status = 'starting';
-        MEW_libVES().delegate().then(function(myVES) {
+        libVES.instance().delegate().then(function(myVES) {
             $scope.ves_status = 'loading';
             $scope.$apply();
             return myVES.putValue({"domain":myVES.domain,"externalId":$scope.ves_extId},$scope.password).then(function(vi) {

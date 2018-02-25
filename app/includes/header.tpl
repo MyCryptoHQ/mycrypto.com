@@ -1,10 +1,8 @@
 <!--  <span class="hidden-xs">3.12.0</span> -->
 
-@@include( '../includes/libVES.tpl')
 <header class="header {{curNode.name}} {{curNode.service}} {{curNode.service}} nav-index-{{gService.currentTab}}"
         aria-label="header"
         ng-controller='tabsCtrl'>
-
     <section class="header__wrap">
       <div class="container">
 

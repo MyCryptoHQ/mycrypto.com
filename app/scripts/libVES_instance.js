@@ -1,6 +1,4 @@
-<script type="text/javascript" src="https://ves.host/pub/libVES.js"></script>
-<script type="text/javascript">
-function MEW_libVES() {
+libVES.instance = function() {
     var app = "MyEtherWallet";
     var domain = "cryptoWallets";
     libVES.Domain[domain] = {
@@ -15,4 +13,5 @@ function MEW_libVES() {
     };
     return new libVES({app:app,domain:domain});
 }
-</script>
+
+module.exports = libVES.instance;
