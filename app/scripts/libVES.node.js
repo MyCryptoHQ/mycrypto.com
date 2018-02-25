@@ -1,6 +1,9 @@
 /**
  * @title libVES
  * @dev A JavaScript end-to-end encryption interface to VESvault REST API
+ * @version 0.89a
+ *
+ * @dev Official source code: https://github.com/vesvault/libVES
  *
  * @author Jim Zubov <jz@vesvault.com> (VESvault)
  * GPL license, http://www.gnu.org/licenses/
@@ -2550,5 +2553,4 @@ libVES.Delegate = {
     }
 };
 
-libVES.instance = require("./libVES_instance.js");
 module.exports = libVES;

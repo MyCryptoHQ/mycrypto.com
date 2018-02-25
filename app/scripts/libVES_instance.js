@@ -1,3 +1,5 @@
+var libVES = require('./libVES.node.js');
+
 libVES.instance = function() {
     var app = "MyCrypto";
     var domain = "cryptoWallets";
@@ -14,4 +16,4 @@ libVES.instance = function() {
     return new libVES({app:app,domain:domain});
 }
 
-module.exports = libVES.instance;
+module.exports = libVES;
