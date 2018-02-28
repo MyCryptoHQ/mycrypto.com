@@ -87,9 +87,9 @@
           <p>
             <strong>
               MetaMask
-            </strong>
+            </strong>:
             <span>
-              Connect via your
+              Access your account via the
             </span>
             <a ng-click="globalService.currentTab=globalService.tabs.sendTransaction.id">
               MetaMask Extension
@@ -106,7 +106,7 @@
           <p>
             <strong>
               Jaxx / imToken
-            </strong>
+            </strong>:
             <span translate="GEN_Help_1">Use your</span>
             <a ng-click="globalService.currentTab=globalService.tabs.sendTransaction.id" translate="x_Mnemonic">
               Mnemonic Phrase
@@ -122,8 +122,8 @@
         <li>
           <p>
             <strong>
-              Mist / Geth / Parity:
-            </strong>
+              Mist / Geth / Parity
+            </strong>:
             <span translate="GEN_Help_1">
               Use your
             </span>
