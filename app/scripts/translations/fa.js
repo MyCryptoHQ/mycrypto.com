@@ -490,46 +490,46 @@ CX_quicksend: 'CX_quicksend',
 
 /* Error Messages */
 
-ERROR_0                         :  '(error_01) لطفا مقدار معتبر وارد  کنید.. Please enter a valid amount.', // 0
-ERROR_1                         :  '(error_02) رمزعبور انتخابی حداقل باید 9 حرف باشد. لطفا از یک رمزعبور قوی استفاده کنید.. Your password must be at least 9 characters. Please ensure it is a strong password.', // 1
-ERROR_2                         :  '(error_03) این نوع از فایل کیف پول قابل شناسایی نیست.. Sorry! We don\'t recognize this type of wallet file.', // 2
-ERROR_3                         :  '(error_04) این فایل کیف پول معتبر نیست.. This is not a valid wallet file.', // 3
-ERROR_4                         :  '(error_05) این واحد وجود ندارد، لطفا یکی از واحدهای زیر را انتخاب کنید.. This unit doesn\'t exists, please use the one of the following units', // 4
-ERROR_5                         :  '(error_06) آدرس نامعتبر است. Please enter a valid address.', // 5
-ERROR_6                         :  '(error_07) رمز عبور نامعتبر است. Please enter a valid password.', // 6
-ERROR_7                         :  '(error_08) مقدار نامعتبر است. Please enter valid decimals     (Must be an integer. Try 0-18.)', // 7
-ERROR_8                         :  '(error_09) میزان حد سوخت نامعتبر است. Please enter a valid gas limit  (Must be an integer. Try 21000-4000000.)', // 8
-ERROR_9                         :  '(error_10) داده نامعتبر است. Please enter a valid data value (Must be hex.)', // 9
-ERROR_10                        :  '(error_11) میزان سوخت نامعتبر است. Please enter a valid gas price. (Must be an integer. Try 20 GWEI / 20000000000 WEI.)',
-ERROR_11                        :  '(error_12) تراکنش امضا شده نامعتبر است Please enter a valid nonce (Must be an integer.)', // 11
-ERROR_12                        :  '(error_13) قبلا کیف پولی با این نام ساخته شده است Invalid signed transaction.', // 12
-ERROR_13                        :  '(error_14) کیف پول پیدا نشد A wallet with this nickname already exists.', // 13
-ERROR_14                        :  '(error_15) Wallet not found.', // 14
-ERROR_15                        :  '(error_16) کیف پولی با این آدرس در حافظه وجود دارد، لطفا صفحه کیف پول خود را چک کنید. Whoops. It doesn\'t look like a proposal with this ID exists yet or there is an error reading this proposal.', // 15 - NOT USED
-ERROR_16                        :  '(error_17) برای پوشش هزینه سوخت باید حداقل 0.001 اتر در حساب خود داشته باشید. لطفا مقداری اتر اضافه کرده و دوباره امتحان کنید. A wallet with this address already exists in storage. Please check your wallets page.', // 16
-ERROR_17                        :  '(error_18) Insufficient balance. Your gas limit * gas price + amount to send exceeds your current balance. Send more ETH to your account or use the "Send Entire Balance" button. If you believe this is in error, try pressing generate again. Required (d+) and got: (d+). [Learn More.](https://support.mycrypto.com/transactions/transactions-not-showing-or-pending.html)', // 17
-ERROR_18                        :  '(error_19) کاراکتر غیرمعتبر است All gas would be used on this transaction. This means you have already voted on this proposal or the debate period has ended.', // 18
-ERROR_19                        :  '(error_20) این توکن نامعتبر است Please enter a valid symbol', // 19
-ERROR_20                        :  '(error_21) Not a valid ERC-20 token', // 20
-ERROR_21                        :  '(error_22) لطفا یک نام نود (گره) معتبر وارد کنید Could not estimate gas. There are not enough funds in the account, or the receiving contract address would throw an error. Feel free to manually set the gas and proceed. The error message upon sending may be more informative.', // 21
-ERROR_22                        :  '(error_23) لطفا url صحیح وارد کنید. در صورتی که از https استفاده می کنید url شما باید https باشد Please enter a valid node name', // 22
-ERROR_23                        :  '(error_24) لطفا یک پورت معتبر وارد کنید Please enter a valid URL. If you are on https, your URL must be https', // 23
-ERROR_24                        :  '(error_25) لطفا آیدی زنجیره معتبر وارد کنید Please enter a valid port.', // 24
-ERROR_25                        :  '(error_26) لطفا ABI معتبر وارد کنید Please enter a valid chain ID.', // 25
-ERROR_26                        :  '(error_27) کمترین مقدار: 0.01 ، بیشترین مقدار: Please enter a valid ABI.', // 26
-ERROR_27                        :  '(error_28) برای دسترسی به این کیف پول در آینده به فایل Keystore و رمزعبور خود (یا کلید خصوصی) نیاز خواهید داشت. لطفا آن را ذخیره کنید و یک نسخه پشتیبان خارجی بسازید. اگر آن را ذخیره نکنید، هیچ راهی برای بازگرداندن کیف پول وجود ندارد. برای راهنمایی [صفحه کمک](https://mycrypto.com/#help)  را مطالعه بفرمایید. Minimum amount: 0.01. Max amount:', // 27
-ERROR_28                        :  '(error_29) لطفا شناسه و رمزعبور معتبر وارد کنید You need this `Keystore File + Password` or the `Private Key` (next page) to access this wallet in the future. ', // 28
-ERROR_29                        :  '(error_30) لطفا نام ENS معتبر وارد کنید Please enter a valid user and password.', // 29
-ERROR_30                        :  '(error_31) عبارت خصوصی نامعتبر است Please enter a valid name (7+ characters, limited punctuation)', // 30
-ERROR_31                        :  '(error_32) Please enter a valid secret phrase.', // 31
-ERROR_32                        :  '(error_33) Could not connect to the node. Refresh your page, try a different node (top-right corner), check your firewall settings. If custom node, check your configs.', // 32
-ERROR_33                        :  '(error_34) The wallet you have unlocked does not match the owner\'s address.', // 33
-ERROR_34                        :  '(error_35) The name you are attempting to reveal does not match the name you have entered.', // 34
-ERROR_35                        :  '(error_36) Input address is not checksummed. <a href="https://support.mycrypto.com/addresses/not-checksummed-shows-when-i-enter-an-address.html" target="_blank" rel="noopener noreferrer">What does that mean?</a>', // 35
-ERROR_36                        :  '(error_37) Please enter a valid TX hash', // 36
-ERROR_37                        :  '(error_38) Please enter valid hex string. Hex only contains: 0x, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, a, b, c, d, e, f', // 37
-ERROR_38                        :  '(error_39) Offer must have either price or reserve set to more than 0', // 38
-ERROR_39                        :  '(error_40) Bid must be more than the specified minimum', // 39
+ERROR_0                         :  '(error_00) لطفا مقدار معتبر وارد  کنید.. Please enter a valid amount.', // 0
+ERROR_1                         :  '(error_01) رمزعبور انتخابی حداقل باید 9 حرف باشد. لطفا از یک رمزعبور قوی استفاده کنید.. Your password must be at least 9 characters. Please ensure it is a strong password.', // 1
+ERROR_2                         :  '(error_02) این نوع از فایل کیف پول قابل شناسایی نیست.. Sorry! We don\'t recognize this type of wallet file.', // 2
+ERROR_3                         :  '(error_03) این فایل کیف پول معتبر نیست.. This is not a valid wallet file.', // 3
+ERROR_4                         :  '(error_04) این واحد وجود ندارد، لطفا یکی از واحدهای زیر را انتخاب کنید.. This unit doesn\'t exists, please use the one of the following units', // 4
+ERROR_5                         :  '(error_05) آدرس نامعتبر است. Please enter a valid address.', // 5
+ERROR_6                         :  '(error_06) رمز عبور نامعتبر است. Please enter a valid password.', // 6
+ERROR_7                         :  '(error_07) مقدار نامعتبر است. Please enter valid decimals     (Must be an integer. Try 0-18.)', // 7
+ERROR_8                         :  '(error_08) میزان حد سوخت نامعتبر است. Please enter a valid gas limit  (Must be an integer. Try 21000-4000000.)', // 8
+ERROR_9                         :  '(error_09) داده نامعتبر است. Please enter a valid data value (Must be hex.)', // 9
+ERROR_10                        :  '(error_10) میزان سوخت نامعتبر است. Please enter a valid gas price. (Must be an integer. Try 20 GWEI / 20000000000 WEI.)',
+ERROR_11                        :  '(error_11) تراکنش امضا شده نامعتبر است Please enter a valid nonce (Must be an integer.)', // 11
+ERROR_12                        :  '(error_12) قبلا کیف پولی با این نام ساخته شده است Invalid signed transaction.', // 12
+ERROR_13                        :  '(error_13) کیف پول پیدا نشد A wallet with this nickname already exists.', // 13
+ERROR_14                        :  '(error_14) Wallet not found.', // 14
+ERROR_15                        :  '(error_15) کیف پولی با این آدرس در حافظه وجود دارد، لطفا صفحه کیف پول خود را چک کنید. Whoops. It doesn\'t look like a proposal with this ID exists yet or there is an error reading this proposal.', // 15 - NOT USED
+ERROR_16                        :  '(error_16) برای پوشش هزینه سوخت باید حداقل 0.001 اتر در حساب خود داشته باشید. لطفا مقداری اتر اضافه کرده و دوباره امتحان کنید. A wallet with this address already exists in storage. Please check your wallets page.', // 16
+ERROR_17                        :  '(error_17) Insufficient balance. Your gas limit * gas price + amount to send exceeds your current balance. Send more ETH to your account or use the "Send Entire Balance" button. If you believe this is in error, try pressing generate again. Required (d+) and got: (d+). [Learn More.](https://support.mycrypto.com/transactions/transactions-not-showing-or-pending.html)', // 17
+ERROR_18                        :  '(error_18) کاراکتر غیرمعتبر است All gas would be used on this transaction. This means you have already voted on this proposal or the debate period has ended.', // 18
+ERROR_19                        :  '(error_19) این توکن نامعتبر است Please enter a valid symbol', // 19
+ERROR_20                        :  '(error_20) Not a valid ERC-20 token', // 20
+ERROR_21                        :  '(error_21) لطفا یک نام نود (گره) معتبر وارد کنید Could not estimate gas. There are not enough funds in the account, or the receiving contract address would throw an error. Feel free to manually set the gas and proceed. The error message upon sending may be more informative.', // 21
+ERROR_22                        :  '(error_22) لطفا url صحیح وارد کنید. در صورتی که از https استفاده می کنید url شما باید https باشد Please enter a valid node name', // 22
+ERROR_23                        :  '(error_23) لطفا یک پورت معتبر وارد کنید Please enter a valid URL. If you are on https, your URL must be https', // 23
+ERROR_24                        :  '(error_24) لطفا آیدی زنجیره معتبر وارد کنید Please enter a valid port.', // 24
+ERROR_25                        :  '(error_25) لطفا ABI معتبر وارد کنید Please enter a valid chain ID.', // 25
+ERROR_26                        :  '(error_26) کمترین مقدار: 0.01 ، بیشترین مقدار: Please enter a valid ABI.', // 26
+ERROR_27                        :  '(error_27) برای دسترسی به این کیف پول در آینده به فایل Keystore و رمزعبور خود (یا کلید خصوصی) نیاز خواهید داشت. لطفا آن را ذخیره کنید و یک نسخه پشتیبان خارجی بسازید. اگر آن را ذخیره نکنید، هیچ راهی برای بازگرداندن کیف پول وجود ندارد. برای راهنمایی [صفحه کمک](https://mycrypto.com/#help)  را مطالعه بفرمایید. Minimum amount: 0.01. Max amount:', // 27
+ERROR_28                        :  '(error_28) لطفا شناسه و رمزعبور معتبر وارد کنید You need this `Keystore File + Password` or the `Private Key` (next page) to access this wallet in the future. ', // 28
+ERROR_29                        :  '(error_29) لطفا نام ENS معتبر وارد کنید Please enter a valid user and password.', // 29
+ERROR_30                        :  '(error_30) عبارت خصوصی نامعتبر است Please enter a valid name (7+ characters, limited punctuation)', // 30
+ERROR_31                        :  '(error_31) Please enter a valid secret phrase.', // 31
+ERROR_32                        :  '(error_32) Could not connect to the node. Refresh your page, try a different node (top-right corner), check your firewall settings. If custom node, check your configs.', // 32
+ERROR_33                        :  '(error_33) The wallet you have unlocked does not match the owner\'s address.', // 33
+ERROR_34                        :  '(error_34) The name you are attempting to reveal does not match the name you have entered.', // 34
+ERROR_35                        :  '(error_35) Input address is not checksummed. <a href="https://support.mycrypto.com/addresses/not-checksummed-shows-when-i-enter-an-address.html" target="_blank" rel="noopener noreferrer">What does that mean?</a>', // 35
+ERROR_36                        :  '(error_36) Please enter a valid TX hash', // 36
+ERROR_37                        :  '(error_37) Please enter valid hex string. Hex only contains: 0x, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, a, b, c, d, e, f', // 37
+ERROR_38                        :  '(error_38) Offer must have either price or reserve set to more than 0', // 38
+ERROR_39                        :  '(error_39) Bid must be more than the specified minimum', // 39
 
 GETH_Balance                    :  '(geth-01) موجودی کافی نیست. Insufficient balance. Your gas limit * gas price + amount to send exceeds your current balance. Send more ETH to your account or use the "Send Entire Balance" button. If you believe this is in error, try pressing generate again. Required (d+) and got: (d+). [Learn More.](https://support.mycrypto.com/transactions/transactions-not-showing-or-pending.html)',
 GETH_Cheap                      :  '(geth-02) قیمت سوخت برای پذیرفته شدن کم است. Gas price too low for acceptance. Try raising the gas price to 21 GWEI via the dropdown in top-right.',
