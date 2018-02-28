@@ -560,46 +560,46 @@ ADD_DigitalBitbox_0b        : 'Volver a abrir MyCrypto usando [Chrome](https://w
 ADD_DigitalBitbox_scan      : 'Conectar a Digital Bitbox ',
 
 
-ERROR_0                         :  '(error_01) Introduce una cantidad válida. Please enter a valid amount.', // 0
-ERROR_1                         :  '(error_02) Tu contraseña debe tener al menos 9 caracteres. Por favor utiliza una contraseña fuerte. Your password must be at least 9 characters. Please ensure it is a strong password.', // 1
-ERROR_2                         :  '(error_03) Lo sentimos. No reconocemos este tipo de archivo de cartera. Sorry! We don\'t recognize this type of wallet file.', // 2
-ERROR_3                         :  '(error_04) Este no es un archivo de cartera válido. This is not a valid wallet file.', // 3
-ERROR_4                         :  '(error_05) Esta unidad no existe. Por favor utiliza una de las siguientes unidades This unit doesn\'t exists, please use the one of the following units', // 4
-ERROR_5                         :  '(error_06) Introduce una Dirección válida. Please enter a valid address.', // 5
-ERROR_6                         :  '(error_07) Introduce una Contraseña válida. Please enter a valid password.', // 6
-ERROR_7                         :  '(error_08) Introduce una Cantidad válida. (Must be integer. Try 0-18.) Please enter valid decimals     (Must be an integer. Try 0-18.)', // 7
-ERROR_8                         :  '(error_09) Introduce un Límite de gas válido. (Must be integer. Try 21000-4000000.) Please enter a valid gas limit  (Must be an integer. Try 21000-4000000.)', // 8
-ERROR_9                         :  '(error_10) Introduce un Valor de datos válido. (Must be hex.) Please enter a valid data value (Must be hex.)', // 9
-ERROR_10                        :  '(error_11) Introduce una Cantidad de gas válida. (Must be integer. Try 20 GWEI / 20000000000 WEI.) Please enter a valid gas price. (Must be an integer. Try 20 GWEI / 20000000000 WEI.)',
-ERROR_11                        :  '(error_12) Introduce un Nonce válido. (Must be integer.) Please enter a valid nonce (Must be an integer.)', // 11
-ERROR_12                        :  '(error_13) Introduce una Transacción firmada válida. Invalid signed transaction.', // 12
-ERROR_13                        :  '(error_14) Ya existe una cartera con este alias. A wallet with this nickname already exists.', // 13
-ERROR_14                        :  '(error_15) Cartera no encontrada. Wallet not found.', // 14
-ERROR_15                        :  '(error_16) No parece que exista todavía una propuesta con este ID o hay un error al leer esta propuesta. Whoops. It doesn\'t look like a proposal with this ID exists yet or there is an error reading this proposal.', // 15 - NOT USED
-ERROR_16                        :  '(error_17) Ya hay almacenada una cartera con esta dirección. Por favor comprueba la página de carteras. A wallet with this address already exists in storage. Please check your wallets page.', // 16
-ERROR_17                        :  '(error_18) Fondos no suficientes para gas * precio + valor. Es necesario tener al menos 0.01 ether en tu cuenta para cubrir el coste del gas. Añade algo de ether e inténtalo de nuevo. Insufficient balance. Your gas limit * gas price + amount to send exceeds your current balance. Send more ETH to your account or use the "Send Entire Balance" button. If you believe this is in error, try pressing generate again. Required (d+) and got: (d+). [Learn More.](https://support.mycrypto.com/transactions/transactions-not-showing-or-pending.html)', // 17
-ERROR_18                        :  '(error_19) Sería necesario utilizar todo el gas en esta transacción. Esto significa que ya has votado en esta propuesta o que el periodo de debate ha concluido. All gas would be used on this transaction. This means you have already voted on this proposal or the debate period has ended.', // 18
-ERROR_19                        :  '(error_20) Introduce un Símbolo válido Please enter a valid symbol', // 19
-ERROR_20                        :  '(error_21) No es un token ERC-20 válido Not a valid ERC-20 token', // 20
-ERROR_21                        :  '(error_22) No se ha podido estimar el gas. No hay suficientes fondos en la cuenta, o el contrato de destino ha devuelto un error. Puedes ajustar el gas manualmente y continuar. Puede que el mensaje de error al enviar contenga más información. Could not estimate gas. There are not enough funds in the account, or the receiving contract address would throw an error. Feel free to manually set the gas and proceed. The error message upon sending may be more informative.', // 21
-ERROR_22                        :  '(error_23) Introduce un nombre de nodo válido Please enter a valid node name', // 22
-ERROR_23                        :  '(error_24) Introduce una URL válida. Si estás en HTTPS, tu URL debe ser HTTPS Please enter a valid URL. If you are on https, your URL must be https', // 23
-ERROR_24                        :  '(error_25) Introduce un puerto válido Please enter a valid port.', // 24
-ERROR_25                        :  '(error_26) Introduce un chain ID válido Please enter a valid chain ID.', // 25
-ERROR_26                        :  '(error_27) Introduce un ABI válido Please enter a valid ABI.', // 26
-ERROR_27                        :  '(error_28) Cantidad mínima 0.01 Minimum amount: 0.01. Max amount:', // 27
-ERROR_28                        :  '(error_29) **Necesitas tu archivo Keystore/JSON y la contraseña** (o clave privada) para acceder a esta cartera en el futuro. Por favor ¡guárdala y respáldala externamente! No hay modo de recuperar una cartera si no la guardas. Lee la [página de ayuda](https://mycrypto.com/#help) para instrucciones. You need this `Keystore File + Password` or the `Private Key` (next page) to access this wallet in the future. ', // 28
-ERROR_29                        :  '(error_30) Introduce un user & password válido. Please enter a valid user and password.', // 29
-ERROR_30                        :  '(error_31) Introduce un name válido (7+ characters, limited punctuation) Please enter a valid name (7+ characters, limited punctuation)', // 30
-ERROR_31                        :  '(error_32) Introduce un secret phrase válido. Please enter a valid secret phrase.', // 31
-ERROR_32                        :  '(error_33) Could not connect to the node. Refresh your page, try a different node (upper right corner), check your firewall settings. If custom node, check your configs.Could not connect to the node. Refresh your page, try a different node (top-right corner), check your firewall settings. If custom node, check your configs.', // 32
-ERROR_33                        :  '(error_34) The wallet you have unlocked does not match the owner\'s address. The wallet you have unlocked does not match the owner\'s address.', // 33
-ERROR_34                        :  '(error_35) The name you are attempting to reveal does not match the name you have entered. The name you are attempting to reveal does not match the name you have entered.', // 34
-ERROR_35                        :  '(error_36) Input address is not checksummed. <a href="https://support.mycrypto.com/addresses/not-checksummed-shows-when-i-enter-an-address.html" target="_blank" rel="noopener noreferrer"> More info</a>Input address is not checksummed. <a href="https://support.mycrypto.com/addresses/not-checksummed-shows-when-i-enter-an-address.html" target="_blank" rel="noopener noreferrer">What does that mean?</a>', // 35
-ERROR_36                        :  '(error_37) Enter valid TX hashPlease enter a valid TX hash', // 36
-ERROR_37                        :  '(error_38) Enter valid hex string (0-9, a-f)Please enter valid hex string. Hex only contains: 0x, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, a, b, c, d, e, f', // 37
-ERROR_38                        :  '(error_39) Offer must have either price or reserve set to more than 0', // 38
-ERROR_39                        :  '(error_40) Bid must be more than the specified minimum', // 39
+ERROR_0                         :  '(error_00) Introduce una cantidad válida. Please enter a valid amount.', // 0
+ERROR_1                         :  '(error_01) Tu contraseña debe tener al menos 9 caracteres. Por favor utiliza una contraseña fuerte. Your password must be at least 9 characters. Please ensure it is a strong password.', // 1
+ERROR_2                         :  '(error_02) Lo sentimos. No reconocemos este tipo de archivo de cartera. Sorry! We don\'t recognize this type of wallet file.', // 2
+ERROR_3                         :  '(error_03) Este no es un archivo de cartera válido. This is not a valid wallet file.', // 3
+ERROR_4                         :  '(error_04) Esta unidad no existe. Por favor utiliza una de las siguientes unidades This unit doesn\'t exists, please use the one of the following units', // 4
+ERROR_5                         :  '(error_05) Introduce una Dirección válida. Please enter a valid address.', // 5
+ERROR_6                         :  '(error_06) Introduce una Contraseña válida. Please enter a valid password.', // 6
+ERROR_7                         :  '(error_07) Introduce una Cantidad válida. (Must be integer. Try 0-18.) Please enter valid decimals     (Must be an integer. Try 0-18.)', // 7
+ERROR_8                         :  '(error_08) Introduce un Límite de gas válido. (Must be integer. Try 21000-4000000.) Please enter a valid gas limit  (Must be an integer. Try 21000-4000000.)', // 8
+ERROR_9                         :  '(error_09) Introduce un Valor de datos válido. (Must be hex.) Please enter a valid data value (Must be hex.)', // 9
+ERROR_10                        :  '(error_10) Introduce una Cantidad de gas válida. (Must be integer. Try 20 GWEI / 20000000000 WEI.) Please enter a valid gas price. (Must be an integer. Try 20 GWEI / 20000000000 WEI.)',
+ERROR_11                        :  '(error_11) Introduce un Nonce válido. (Must be integer.) Please enter a valid nonce (Must be an integer.)', // 11
+ERROR_12                        :  '(error_12) Introduce una Transacción firmada válida. Invalid signed transaction.', // 12
+ERROR_13                        :  '(error_13) Ya existe una cartera con este alias. A wallet with this nickname already exists.', // 13
+ERROR_14                        :  '(error_14) Cartera no encontrada. Wallet not found.', // 14
+ERROR_15                        :  '(error_15) No parece que exista todavía una propuesta con este ID o hay un error al leer esta propuesta. Whoops. It doesn\'t look like a proposal with this ID exists yet or there is an error reading this proposal.', // 15 - NOT USED
+ERROR_16                        :  '(error_16) Ya hay almacenada una cartera con esta dirección. Por favor comprueba la página de carteras. A wallet with this address already exists in storage. Please check your wallets page.', // 16
+ERROR_17                        :  '(error_17) Fondos no suficientes para gas * precio + valor. Es necesario tener al menos 0.01 ether en tu cuenta para cubrir el coste del gas. Añade algo de ether e inténtalo de nuevo. Insufficient balance. Your gas limit * gas price + amount to send exceeds your current balance. Send more ETH to your account or use the "Send Entire Balance" button. If you believe this is in error, try pressing generate again. Required (d+) and got: (d+). [Learn More.](https://support.mycrypto.com/transactions/transactions-not-showing-or-pending.html)', // 17
+ERROR_18                        :  '(error_18) Sería necesario utilizar todo el gas en esta transacción. Esto significa que ya has votado en esta propuesta o que el periodo de debate ha concluido. All gas would be used on this transaction. This means you have already voted on this proposal or the debate period has ended.', // 18
+ERROR_19                        :  '(error_19) Introduce un Símbolo válido Please enter a valid symbol', // 19
+ERROR_20                        :  '(error_20) No es un token ERC-20 válido Not a valid ERC-20 token', // 20
+ERROR_21                        :  '(error_21) No se ha podido estimar el gas. No hay suficientes fondos en la cuenta, o el contrato de destino ha devuelto un error. Puedes ajustar el gas manualmente y continuar. Puede que el mensaje de error al enviar contenga más información. Could not estimate gas. There are not enough funds in the account, or the receiving contract address would throw an error. Feel free to manually set the gas and proceed. The error message upon sending may be more informative.', // 21
+ERROR_22                        :  '(error_22) Introduce un nombre de nodo válido Please enter a valid node name', // 22
+ERROR_23                        :  '(error_23) Introduce una URL válida. Si estás en HTTPS, tu URL debe ser HTTPS Please enter a valid URL. If you are on https, your URL must be https', // 23
+ERROR_24                        :  '(error_24) Introduce un puerto válido Please enter a valid port.', // 24
+ERROR_25                        :  '(error_25) Introduce un chain ID válido Please enter a valid chain ID.', // 25
+ERROR_26                        :  '(error_26) Introduce un ABI válido Please enter a valid ABI.', // 26
+ERROR_27                        :  '(error_27) Cantidad mínima 0.01 Minimum amount: 0.01. Max amount:', // 27
+ERROR_28                        :  '(error_28) **Necesitas tu archivo Keystore/JSON y la contraseña** (o clave privada) para acceder a esta cartera en el futuro. Por favor ¡guárdala y respáldala externamente! No hay modo de recuperar una cartera si no la guardas. Lee la [página de ayuda](https://mycrypto.com/#help) para instrucciones. You need this `Keystore File + Password` or the `Private Key` (next page) to access this wallet in the future. ', // 28
+ERROR_29                        :  '(error_29) Introduce un user & password válido. Please enter a valid user and password.', // 29
+ERROR_30                        :  '(error_30) Introduce un name válido (7+ characters, limited punctuation) Please enter a valid name (7+ characters, limited punctuation)', // 30
+ERROR_31                        :  '(error_31) Introduce un secret phrase válido. Please enter a valid secret phrase.', // 31
+ERROR_32                        :  '(error_32) Could not connect to the node. Refresh your page, try a different node (upper right corner), check your firewall settings. If custom node, check your configs.Could not connect to the node. Refresh your page, try a different node (top-right corner), check your firewall settings. If custom node, check your configs.', // 32
+ERROR_33                        :  '(error_33) The wallet you have unlocked does not match the owner\'s address. The wallet you have unlocked does not match the owner\'s address.', // 33
+ERROR_34                        :  '(error_34) The name you are attempting to reveal does not match the name you have entered. The name you are attempting to reveal does not match the name you have entered.', // 34
+ERROR_35                        :  '(error_35) Input address is not checksummed. <a href="https://support.mycrypto.com/addresses/not-checksummed-shows-when-i-enter-an-address.html" target="_blank" rel="noopener noreferrer"> More info</a>Input address is not checksummed. <a href="https://support.mycrypto.com/addresses/not-checksummed-shows-when-i-enter-an-address.html" target="_blank" rel="noopener noreferrer">What does that mean?</a>', // 35
+ERROR_36                        :  '(error_36) Enter valid TX hashPlease enter a valid TX hash', // 36
+ERROR_37                        :  '(error_37) Enter valid hex string (0-9, a-f)Please enter valid hex string. Hex only contains: 0x, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, a, b, c, d, e, f', // 37
+ERROR_38                        :  '(error_38) Offer must have either price or reserve set to more than 0', // 38
+ERROR_39                        :  '(error_39) Bid must be more than the specified minimum', // 39
 
 GETH_Balance                    :  '(geth-01) Saldo insuficiente. Insufficient balance. Your gas limit * gas price + amount to send exceeds your current balance. Send more ETH to your account or use the "Send Entire Balance" button. If you believe this is in error, try pressing generate again. Required (d+) and got: (d+). [Learn More.](https://support.mycrypto.com/transactions/transactions-not-showing-or-pending.html)',
 GETH_Cheap                      :  '(geth-02) Precio de gas demasiado bajo para aceptación. Gas price too low for acceptance. Try raising the gas price to 21 GWEI via the dropdown in top-right.',
