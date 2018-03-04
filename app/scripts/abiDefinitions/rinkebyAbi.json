@@ -3,88 +3,13 @@
     "address": "",
     "abi": ' '
 },{
+    "name": "Gophercon",
+    "address": "0x7F3A19eDC1fFBd3fC2b4fc978b0d8f8C19316186",
+    "abi": '[{"constant":true,"inputs":[],"name":"numTargets","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"","type":"uint256"}],"name":"hitList","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[],"name":"hitMe","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[{"name":"","type":"address"}],"name":"hits","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"anonymous":false,"inputs":[{"indexed":false,"name":"who","type":"address"},{"indexed":false,"name":"count","type":"uint256"}],"name":"Thump","type":"event"}]'
+},{
     "name": "HitMe contract... by Dave Appleton for Gophercon India",
     "address": "0x1f3aa7b716c9537262dd7450404e28ae7923e715",
-    "abi": '[
-	{
-		"constant": true,
-		"inputs": [],
-		"name": "numTargets",
-		"outputs": [
-			{
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"payable": false,
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"constant": true,
-		"inputs": [
-			{
-				"name": "",
-				"type": "address"
-			}
-		],
-		"name": "hits",
-		"outputs": [
-			{
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"payable": false,
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"constant": true,
-		"inputs": [
-			{
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"name": "hitList",
-		"outputs": [
-			{
-				"name": "",
-				"type": "address"
-			}
-		],
-		"payable": false,
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"anonymous": false,
-		"inputs": [
-			{
-				"indexed": false,
-				"name": "who",
-				"type": "address"
-			},
-			{
-				"indexed": false,
-				"name": "count",
-				"type": "uint256"
-			}
-		],
-		"name": "Thump",
-		"type": "event"
-	},
-	{
-		"constant": false,
-		"inputs": [],
-		"name": "hitMe",
-		"outputs": [],
-		"payable": false,
-		"stateMutability": "nonpayable",
-		"type": "function"
-	}
-]'
+    "abi": '[{"constant":true,"inputs":[],"name":"numTargets","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"","type":"uint256"}],"name":"hitList","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[],"name":"hitMe","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[{"name":"","type":"address"}],"name":"hits","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"anonymous":false,"inputs":[{"indexed":false,"name":"who","type":"address"},{"indexed":false,"name":"count","type":"uint256"}],"name":"Thump","type":"event"}]'
 },{
     "name": "☼Plasma Token and Token Wallet Contract",
     "address": "0xA52832A0B3EBfAeF629B1a44A922F46c90445108",
