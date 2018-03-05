@@ -120,13 +120,6 @@
                  placeholder="{{'x_Password' | translate }}"
                  ng-model="filePassword"
                  ng-change="onFilePassChange()" />
-        <a tabindex="0" role="button"
-          class="btn btn-primary"
-          ng-click="ves_retrieve()">
-          <span translate="add_retrieve_ves">
-            Retrieve your wallet password with VES
-          </span>
-        </a>
         </div>
 
       </section>
