@@ -1,7 +1,7 @@
 /**
  * @title libVES
  * @dev A JavaScript end-to-end encryption interface to VESvault REST API
- * @version 1.00b
+ * @version 1.01b
  *
  * @dev Official source code: https://github.com/vesvault/libVES
  *
@@ -253,9 +253,17 @@ libVES.prototype = {
 		})).catch(function(e) {
 		    throw new libVES.Error('NotFound','No matching secondary key (domain:' + ext.domain + ', externalId:' + ext.externalId + '). Supply "user" to create the temp key, or define libVES.Domain.' + ext.domain + '.vaultRefToUser(vaultRef) to return matching libVES.User',{error: e});
 		}).then(function(u) {
-		    return self.createTempKey(self._matchUser(u)).then(function(vkey) {
-			return vkey.setField('externals',exts).then(function() {
-			    return vkey;
+		    return self.me().then(function(me) {
+			return Promise.all([me.getId(),u.getId()]).then(function(ids) {
+			    if (ids[0] == ids[1]) return self.getSecondaryKey(exts,true);
+			}).catch(function(e) {
+			    if (e != 'NotFound') throw e;
+			}).then(function(rs) {
+			    return rs || self.createTempKey(self._matchUser(u)).then(function(vkey) {
+				return vkey.setField('externals',exts).then(function() {
+				    return vkey;
+				});
+			    });
 			});
 		    });
 		});
@@ -1277,13 +1285,13 @@ libVES.Object.prototype = {
     getId: function() {
 	return this.id ? Promise.resolve(this.id) : this.getField('id');
     },
-    postData: function(fields,refs) {
-	if (refs) for (var k in refs) if (refs[k] === this) return Promise.resolve({"$ref": k});
+    postData: function(fields,refs,parent) {
+	if (refs && parent) for (var k in refs) if (refs[k] === this) return Promise.resolve({"$ref": k});
 	var data = {};
 	var prs = [];
 	var self = this;
 	var fmt = function(v,a) {
-	    if (v instanceof libVES.Object) return v.postData(a,refs);
+	    if (v instanceof libVES.Object) return v.postData(a,refs,self);
 	    else if (v instanceof Array) return Promise.all(v.map(function(vv,i) {
 		return fmt(vv,a);
 	    }));
@@ -1636,18 +1644,24 @@ libVES.VaultKey.prototype = new libVES.Object({
 	var self = this;
 	return self.getUser().then(function(user) {
 	    return self.getExternals().then(function(exts) {
-		return (exts && exts.length ? exts[0].toRef() : Promise.resolve(user)).then(function(ref) {
+		return (exts && exts.length ? exts[0].toRef().then(function(ext) {
+		    ext.user = user;
+		    return ext;
+		}) : Promise.resolve(user)).then(function(ref) {
 		    return self.VES.usersToKeys([ref]);
 		});
 	    }).then(function(keys) {
 		return Promise.all(keys.map(function(key,i) {
-		    return key.getVaultEntries().then(function() {
+		    return key.getVaultEntries().catch(function(e) {
+			if (e.code != 'NotFound') throw e;
+			key.vaultEntries = undefined;
+		    }).then(function() {
 			return key.rekeyFrom(self);
 		    });
 		}));
 	    }).then(function(keys) {
 		return user.setField('vaultKeys',keys).then(function() {
-		    return user.post(null,{vaultEntries: true}).then(function(data) {
+		    return user.post(null,{vaultEntries: true},{refs: {'#/': user}}).then(function(data) {
 			self.setFields(data,false);
 			return self;
 		    });
@@ -2488,8 +2502,8 @@ libVES.Delegate = {
 	+ '<div style="min-width:320px;max-width:640px;;background-color:white;margin: auto;padding: 30px;">'
 	+ '<p>Use the VESvault popup window to grant access to the App Vault</p>'
 	+ '<p class="VESvaultDelegateBlockerMsg" style="color: #bf7f00; font-style:italic;">&nbsp;</p>'
-	+ '<p><a href="{$url}" target="VESvaultDelegate" onclick="return !libVES.Delegate.retryPopup(this.href,this)">Click here</a> if you can\'t see VESvault popup window</p>'
-	+ '<p><a href="#" onclick="libVES.Delegate.cancel(); return false;">Cancel</a></p>'
+	+ '<p><a class="VESvaultDelegateRetryLnk" href="{$url}" target="VESvaultDelegate" onclick="return !libVES.Delegate.retryPopup(this.href,this)">Click here</a> if you can\'t see VESvault popup window</p>'
+	+ '<p><a class="VESvaultDelegateCancelLnk" href="#" onclick="libVES.Delegate.cancel(); return false;">Cancel</a></p>'
 	+ '</div></div></div></div>',
     htmlBlockerMsg: 'Looks like your browser is using a popup blocker...',
     name: 'VESvaultDelegate',
@@ -2510,6 +2524,15 @@ libVES.Delegate = {
 	    self.popup.innerHTML = self.html.replace('{$url}',url);
 	    document.getElementsByTagName('BODY')[0].appendChild(self.popup);
 	    self.retryPopupCalled = 0;
+	    try {
+		document.getElementsByClassName('VESvaultDelegateRetryLnk')[0].onclick = function() {
+		    return !libVES.Delegate.retryPopup(this.href,this);
+		};
+		document.getElementsByClassName('VESvaultDelegateCancelLnk')[0].onclick = function() {
+		    libVES.Delegate.cancel();
+		    return false;
+		};
+	    } catch(e) {}
 	    if (!self.openPopup(url)) try {
 		document.getElementsByClassName('VESvaultDelegateBlockerMsg')[0].innerHTML = self.htmlBlockerMsg;
 	    } catch(e) {
@@ -2517,6 +2540,7 @@ libVES.Delegate = {
 	    }
 	    window.addEventListener('message',self.listener.bind(self));
 	    window.addEventListener('focus',self.chkCancel.bind(self));
+	    window.addEventListener('beforeunload',self.cancel.bind(self));
 	    window.clearInterval(self.popupInterval);
 	    self.popupInterval = window.setInterval(self.chkCancel.bind(self),1000);
 	});

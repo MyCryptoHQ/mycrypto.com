@@ -273,7 +273,10 @@ var decryptWalletCtrl = function($scope, $sce, walletService) {
                         return myVES.putValue({"domain":myVES.domain,"externalId":$scope.ves_extId},$scope.filePassword).then(function(vi) {
                             $scope.ves_status = 'ok';
                             $scope.$apply();
-                            window.setTimeout($scope.ves_backupDone,2000);
+                            window.setTimeout(function() {
+                                $scope.ves_backupDone();
+                                $scope.$apply();
+                            },2000);
                         });
                     }).catch(function(error) {
                         $scope.ves = false;
@@ -302,7 +305,6 @@ var decryptWalletCtrl = function($scope, $sce, walletService) {
         $scope.wallet = $scope.ves_wallet;
         $scope.wallet.type = "default";
         walletService.wallet = $scope.wallet;
-        $scope.$apply();
     };
     $scope.decryptAddressOnly = function() {
         if ($scope.Validator.isValidAddress($scope.addressOnly)) {

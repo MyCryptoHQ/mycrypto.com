@@ -375,6 +375,20 @@ globalFuncs.VES_getExtId = function(str) {
     });
 };
 
+globalFuncs.VES_exist = function(extIds,idx) {
+    return Promise.resolve(extIds).then(function(extIds) {
+        var myVES = libVES.instance();
+        return myVES.getFileItem({domain:myVES.domain,externalId:extIds[idx]}).then(function(vaultItem) {
+            return vaultItem.getId().then(function(id) {
+                return true;
+            }).catch(function(e) {
+                if (e.code == 'NotFound') return false;
+                else throw e;
+            });
+        });
+    });
+};
+
 globalFuncs.localStorage = {
         isAvailable: function() {
             // return typeof localStorage != "undefined";

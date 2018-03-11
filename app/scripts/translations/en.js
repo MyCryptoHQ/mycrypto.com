@@ -816,6 +816,7 @@ x_VES_link_download             :  'VES integration overview',
 x_VES_retrieve1                 :  'Retrieve your wallet password with VES',
 x_VES_retrieve2                 :  'The password for this wallet is not yet backed up with VES.',
 x_VES_retrieve3                 :  'Back it up when unlocking the wallet',
+x_VES_retrieve3a                :  'Back up the wallet password with VES',
 x_VES_retrieve4                 :  'VES backup',
 x_VES_retrieve5                 :  'Checking if your wallet password is backed up with VES...',
 x_VES_or                        :  'OR'
