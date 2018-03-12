@@ -221,15 +221,15 @@ nodes.nodeList = {
     },
     'etsc': {
         'name': 'ETSC',
-        'blockExplorerTX': 'https://explorer.ethereumsocial.kr/#/tx/[[txHash]]',
-        'blockExplorerAddr': 'https://explorer.ethereumsocial.kr/#/address/[[address]]',
+        'blockExplorerTX': 'https://explorer.ethereumsocial.kr/tx/[[txHash]]',
+        'blockExplorerAddr': 'https://explorer.ethereumsocial.kr/addr/[[address]]',
         'type': nodes.nodeTypes.ETSC,
         'eip155': true,
         'chainId': 214,
         'tokenList': require('./tokens/etscTokens.json'),
         'abiList': require('./abiDefinitions/etscAbi.json'),
         'estimateGas': true,
-        'service': 'gazua.tv',
+        'service': 'ethereumsocial.kr',
         'lib': new nodes.customNode('https://node.ethereumsocial.kr', '')
     }
 };
