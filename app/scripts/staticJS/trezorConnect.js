@@ -37,12 +37,7 @@ var DISABLE_LOGIN_BUTTONS = window.TREZOR_DISABLE_LOGIN_BUTTONS || false;
 var CHROME_URL = window.TREZOR_CHROME_URL || './chrome/wrapper.html';
 var POPUP_ORIGIN = window.TREZOR_POPUP_ORIGIN || 'https://connect.trezor.io';
 var POPUP_PATH = window.TREZOR_POPUP_PATH || POPUP_ORIGIN + '/' + VERSION;
-if (window.location.hostname === 'localhost' && !window.TREZOR_POPUP_ORIGIN) {
-    // development settings
-    //POPUP_ORIGIN = window.location.origin;
-    //POPUP_PATH = POPUP_ORIGIN;
-}
-var POPUP_URL = window.TREZOR_POPUP_URL || POPUP_PATH + '/popup/popup.html';
+var POPUP_URL = window.TREZOR_POPUP_URL || POPUP_PATH + '/popup/popup.html?v=' + new Date().getTime();
 
 var POPUP_INIT_TIMEOUT = 15000;
 
