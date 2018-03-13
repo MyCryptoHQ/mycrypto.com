@@ -43,6 +43,13 @@
       <li><a href="https://www.mycrypto.com/helpers.html" target="_blank" rel="noopener noreferrer"> Convert ETH Units </a></li>
       <li><a href="https://www.mycrypto.com/signmsg.html" target="_blank" rel="noopener noreferrer"> Sign Message </a></li>
       <li><a href="mailto:press@mycrypto.com" target="_blank" rel="noopener noreferrer"> Press Inquiries </a></li>
+      <li class="padding--top">
+        <a href="https://metamask.io/" target="_blank" rel="noopener noreferrer"> MetaMask </a>
+        &nbsp;&middot;&nbsp;
+        <a href="https://infura.io/" target="_blank" rel="noopener noreferrer"> Infura </a>
+        &nbsp;&middot;&nbsp;
+        <a href="http://etherscan.io/" target="_blank" rel="noopener noreferrer"> Etherscan </a>
+      </li>
     </ul>
   </div>
 
@@ -70,18 +77,12 @@
   <div class="footer__right">
     <p class="footer__title">Support Us &amp; Our Friends</p>
     <ul class="footer__links">
-      <li><a href="https://www.ledgerwallet.com/r/1985?path=/products/" target="_blank" rel="noopener noreferrer"> Buy a Ledger Wallet </a></li>
-      <li><a href="https://trezor.io/?a=mycrypto.com" target="_blank" rel="noopener noreferrer"> Buy a TREZOR </a></li>
-      <li><a href="https://ether.cards/?utm_source=mycrypto&utm_medium=cpm&utm_campaign=site" target="_blank" rel="noopener noreferrer"> Get an ether.card </a></li>
+      <li><a href="https://www.ledgerwallet.com/r/1985?path=/products/" target="_blank" rel="noopener"> Buy a Ledger Wallet </a></li>
+      <li><a href="https://trezor.io/?a=mycrypto.com" target="_blank" rel="noopener"> Buy a TREZOR </a></li>
+      <li><a href="http://keepkey.go2cloud.org/aff_c?offer_id=1&aff_id=4086" rel="noopener"> Buy a Keepkey </a></li>
+      <li><a href="https://ether.cards/?utm_source=mycrypto&utm_medium=cpm&utm_campaign=site" target="_blank" rel="noopener"> Get an ether.card </a></li>
       <li>Donate ETH <br /><small class="mono">0x4bbeEB066eD09B7AEd07bF39EEe0460DFa261520</small> </li>
       <li>Donate BTC <br /><small class="mono">32oirLEzZRhi33RCXDF9WHJjEb8RsrSss3</small> </li>
-      <li class="padding--top">
-        <a href="https://metamask.io/" target="_blank" rel="noopener noreferrer"> MetaMask </a>
-        &nbsp;&middot;&nbsp;
-        <a href="https://infura.io/" target="_blank" rel="noopener noreferrer"> Infura </a>
-        &nbsp;&middot;&nbsp;
-        <a href="http://etherscan.io/" target="_blank" rel="noopener noreferrer"> Etherscan </a>
-      </li>
     </ul>
   </div>
 </footer>
