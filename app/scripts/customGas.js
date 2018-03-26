@@ -247,4 +247,10 @@ to:         '0x4F8B6cA78711207E1B281DB63e8d6EAA1ce2F63E',
 gasLimit:   230000,
 data:       '',
 msg:        'HEdpAY (Hdp.ф) sale. Official sale website: https://ibiginvestments.com/hedpay'
+},{
+// WHEN (￦) Token Sale (interface.whenhub.com)
+to:         '0xF4FE95603881D0e07954fD7605E0e9a916e42C44',
+gasLimit:   200000,
+data:       '',
+msg:        'Join the WHEN Token Sale at https://interface.whenhub.com and build the future of person-to-person micro-contracts on the blockchain'
 }]
