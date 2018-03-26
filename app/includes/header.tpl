@@ -111,13 +111,13 @@
           <span class="dropdown dropdown-alerts" ng-cloak>
             <a tabindex="0"
                aria-label="What's New From MyCrypto"
-               title="What's New From MyCrypto"
+               title="Try the MyCrypto Beta!"
                class="dropdown-toggle"
-               href="https://medium.com/mycrypto/a-whole-mew-world-6a066bf41093"
+               href="https://beta.mycrypto.com/"
                target="_blank"
                rel="noopener noreferrer">
                  <p>LATEST</p>
-                 What is MyCrypto?
+                 Try the MyCrypto Beta!
             </a>
           </span>
 
