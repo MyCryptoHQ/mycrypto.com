@@ -247,4 +247,10 @@ to:         '0x4F8B6cA78711207E1B281DB63e8d6EAA1ce2F63E',
 gasLimit:   230000,
 data:       '',
 msg:        'HEdpAY (Hdp.ф) sale. Official sale website: https://ibiginvestments.com/hedpay'
+},{
+// HEdpAY (Hdp.ф) Sale (hedpay.com)
+to:         '0x386Faa4703a34a7Fdb19Bec2e14Fd427C9638416',
+gasLimit:   150000,
+data:       '',
+msg:        'www.dobetacceptbet.com is the first trading platform for Trigger Options trading'
 }]
