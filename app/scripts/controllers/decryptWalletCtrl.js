@@ -134,7 +134,7 @@ var decryptWalletCtrl = function($scope, $sce, walletService) {
         $scope.onHDDPathChange();
     }
     $scope.showContent = function($fileContent) {
-        $scope.notifier.info(globalFuncs.successMsgs[4] + document.getElementById('fselector').files[0].name);
+        $scope.notifier.info(globalFuncs.successMsgs[4]);
         try {
             $scope.requireFPass = Wallet.walletRequirePass($fileContent);
             $scope.showFDecrypt = !$scope.requireFPass;

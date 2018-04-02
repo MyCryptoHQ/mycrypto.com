@@ -97,7 +97,7 @@ var addWalletCtrl = function($scope, $sce) {
         $scope.showBtnUnlock = $scope.showDPaths = hd.bip39.validateMnemonic($scope.manualmnemonic);
     };
     $scope.showContent = function($fileContent) {
-        $scope.notifier.info(globalFuncs.successMsgs[4] + document.getElementById('fselector').files[0].name);
+        $scope.notifier.info(globalFuncs.successMsgs[4]);
         try {
             $scope.requireFPass = Wallet.walletRequirePass($fileContent);
             $scope.showBtnUnlock = !$scope.requireFPass;
