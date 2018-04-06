@@ -40,10 +40,17 @@
         </a>
       </li>
       <li ng-show="ajaxReq.type == 'ETH'">
-        <a href="https://ethplorer.io/address/{{wallet.getAddressString()}}" target="_blank" rel="noopener noreferrer">
-          Tokens (Ethplorer.io)
+        <a href="https://www.etherchain.org/account/{{wallet.getAddressString()}}" target="_blank" rel="noopener noreferrer">
+            ETH (etherchain.org)
         </a>
       </li>
+      <li ng-show="ajaxReq.type == 'ETH'">
+        <a href="https://ethplorer.io/address/{{wallet.getAddressString()}}" target="_blank" rel="noopener noreferrer">
+          Tokens (ethplorer.io)
+        </a>
+      </li>
+
+
     </ul>
   </div>
 

@@ -49,6 +49,8 @@
         <a href="https://infura.io/" target="_blank" rel="noopener noreferrer"> Infura </a>
         &nbsp;&middot;&nbsp;
         <a href="http://etherscan.io/" target="_blank" rel="noopener noreferrer"> Etherscan </a>
+        &nbsp;&middot;&nbsp;
+        <a href="https://etherchain.org/" target="_blank" rel="noopener noreferrer"> Etherchain </a>
       </li>
     </ul>
   </div>
