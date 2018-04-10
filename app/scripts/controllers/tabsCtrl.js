@@ -42,21 +42,21 @@ var tabsCtrl = function($scope, globalService, $translate, $sce) {
     $scope.gasChanged = function() {
         globalFuncs.localStorage.setItem(gasPriceKey, $scope.gas.value);
         ethFuncs.gasAdjustment = $scope.gas.value;
-        $scope.gasPriceMsg = ethFuncs.gasAdjustment < 41 ? true : false
+        $scope.gasPriceMsg = ethFuncs.gasAdjustment < 10 ? true : false
     }
     var setGasValues = function() {
         $scope.gas = {
-            curVal: 41,
-            value: globalFuncs.localStorage.getItem(gasPriceKey, null) ? parseInt(globalFuncs.localStorage.getItem(gasPriceKey)) : 41,
+            curVal: 10,
+            value: globalFuncs.localStorage.getItem(gasPriceKey, null) ? parseInt(globalFuncs.localStorage.getItem(gasPriceKey)) : 10,
             max: 99,
-            min: 1,
-            step: 1
+            min: .1,
+            step: .1
         }
 
         var curNode = globalFuncs.localStorage.getItem('curNode', null);
 
         ethFuncs.gasAdjustment = $scope.gas.value;
-        $scope.gasPriceMsg = ethFuncs.gasAdjustment < 41 ? true : false
+        $scope.gasPriceMsg = ethFuncs.gasAdjustment < 10 ? true : false
     }
     setGasValues();
     $scope.gasChanged();
