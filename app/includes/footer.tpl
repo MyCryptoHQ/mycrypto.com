@@ -12,8 +12,7 @@
 
 
 <!-- Footer -->
-
-<footer class="footer" role="content" aria-label="footer" ng-controller='footerCtrl'>
+<footer class="footer" role="content" aria-label="footer">
 
   <div class="footer__left">
     <p class="footer__icons">
@@ -40,20 +39,20 @@
       </a>
     </p>
     <ul class="footer__links">
-      <li><a href="https://chrome.google.com/webstore/detail/etheraddresslookup/pdknmigbbbhmllnmgdfalmedcmcefdfn" target="_blank" rel="noopener noreferrer"> Ether Address Lookup </a></li>
-      <li><a href="https://chrome.google.com/webstore/detail/ethersecuritylookup/bhhfhgpgmifehjdghlbbijjaimhmcgnf" target="_blank" rel="noopener noreferrer"> Ether Security Lookup </a></li>
-      <li><a href="https://etherscamdb.info/" target="_blank" rel="noopener noreferrer"> EtherScamDB </a></li>
-      <li><a href="https://www.mycrypto.com/helpers.html" target="_blank" rel="noopener noreferrer"> Convert ETH Units </a></li>
-      <li><a href="https://www.mycrypto.com/signmsg.html" target="_blank" rel="noopener noreferrer"> Sign Message </a></li>
-      <li><a href="mailto:press@mycrypto.com" target="_blank" rel="noopener noreferrer"> Press Inquiries </a></li>
+      <li><a href="https://chrome.google.com/webstore/detail/etheraddresslookup/pdknmigbbbhmllnmgdfalmedcmcefdfn" target="_blank" rel="noopener"> Ether Address Lookup </a></li>
+      <li><a href="https://chrome.google.com/webstore/detail/ethersecuritylookup/bhhfhgpgmifehjdghlbbijjaimhmcgnf" target="_blank" rel="noopener"> Ether Security Lookup </a></li>
+      <li><a href="https://etherscamdb.info/" target="_blank" rel="noopener"> EtherScamDB </a></li>
+      <li><a href="https://www.mycrypto.com/helpers.html" target="_blank" rel="noopener"> Convert ETH Units </a></li>
+      <li><a href="https://www.mycrypto.com/signmsg.html" target="_blank" rel="noopener"> Sign Message </a></li>
+      <li><a href="mailto:press@mycrypto.com" target="_blank" rel="noopener"> Press Inquiries </a></li>
       <li>
-        <a href="https://metamask.io/" target="_blank" rel="noopener noreferrer"> MetaMask </a>
+        <a href="https://metamask.io/" target="_blank" rel="noopener"> MetaMask </a>
         &nbsp;&middot;&nbsp;
-        <a href="https://infura.io/" target="_blank" rel="noopener noreferrer"> Infura </a>
+        <a href="https://infura.io/" target="_blank" rel="noopener"> Infura </a>
         &nbsp;&middot;&nbsp;
-        <a href="http://etherscan.io/" target="_blank" rel="noopener noreferrer"> Etherscan </a>
+        <a href="http://etherscan.io/" target="_blank" rel="noopener"> Etherscan </a>
         &nbsp;&middot;&nbsp;
-        <a href="https://etherchain.org/" target="_blank" rel="noopener noreferrer"> Etherchain </a>
+        <a href="https://www.etherchain.org/" target="_blank" rel="noopener"> Etherchain </a>
       </li>
     </ul>
   </div>
@@ -63,9 +62,11 @@
       <img class="footer__logo" src="images/logo-blue-white.svg" height="64px" width="245px" alt="MyCrypto">
     </a>
     <p class="footer__links--lg">
-      <a href="https://www.mycrypto.com" target="_blank" rel="noopener noreferrer"> MyCrypto.com </a>
-      <a href="https://support.mycrypto.com" target="_blank" rel="noopener noreferrer"> Help &amp; Support </a>
-      <a href="https://about.mycrypto.com" target="_blank" rel="noopener noreferrer"> Our Team </a>
+      <a href="https://www.mycrypto.com" target="_blank" rel="noopener"> MyCrypto.com </a>
+      <a href="https://download.mycrypto.com" target="_blank" rel="noopener"> MyCrypto Apps </a>
+      <a href="https://support.mycrypto.com" target="_blank" rel="noopener"> Help &amp; Support </a>
+      <a href="https://about.mycrypto.com" target="_blank" rel="noopener"> Our Team </a>
+      <a href="https://about.mycrypto.com/privacy" target="_blank" rel="noopener"> Privacy </a>
     </p>
     <p class="footer__desc">MyCrypto is an open-source, client-side tool for generating ether wallets, handling ERC-20 tokens, and interacting with the blockchain more easily. Developed by and for the community since 2015, we’re focused on building awesome products that put the power in people’s hands.</p>
     <p class="footer__copyright">
@@ -74,7 +75,7 @@
         Disclaimer
       </a>
       <span style="margin-left: 1em">
-        v3.14.0
+        v3.15.0
       </span>
     </p>
   </div>
@@ -85,13 +86,15 @@
       <li><a href="https://www.ledgerwallet.com/r/1985?path=/products/" target="_blank" rel="noopener"> Buy a Ledger Wallet </a></li>
       <li><a href="https://shop.trezor.io?a=mycrypto.com" target="_blank" rel="noopener"> Buy a TREZOR </a></li>
       <li><a href="http://keepkey.go2cloud.org/aff_c?offer_id=1&aff_id=4086" rel="noopener"> Buy a Keepkey </a></li>
-      <li><a href="https://ether.cards/?utm_source=mycrypto&utm_medium=cpm&utm_campaign=site" target="_blank" rel="noopener"> Get an ether.card </a></li>
       <li><a href="https://stee.ly/2Hcl4RE" target="_blank" rel="noopener"> Get a Steely </a></li>
+      <li><a href="https://ether.cards/?utm_source=mycrypto&utm_medium=cpm&utm_campaign=site" target="_blank" rel="noopener"> Get an ether.card </a></li>
       <li>Donate ETH <br /><small class="mono">0x4bbeEB066eD09B7AEd07bF39EEe0460DFa261520</small> </li>
       <li>Donate BTC <br /><small class="mono">32oirLEzZRhi33RCXDF9WHJjEb8RsrSss3</small> </li>
     </ul>
   </div>
 </footer>
+<!-- / Footer -->
+
 
 @@if (site === 'web' ) { @@include( './footer-disclaimer-modal.tpl',   { "site": "web" } ) }
 @@if (site === 'cx'  ) { @@include( './footer-disclaimer-modal.tpl',   { "site": "cx"  } ) }
