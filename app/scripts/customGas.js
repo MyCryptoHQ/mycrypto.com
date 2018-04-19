@@ -7,13 +7,12 @@
 // http://www.tokensalecalendar.com/
 
 module.exports = [{
-  {
 // LYS Token Sale 
 to:         'ab9f592eb58359b62719c532b51d2c88d59cf5048a5ba2fd99f55fdcf33af783',
 gasLimit:   200000,
 data:       '',
 msg:        'Lightyears Token ICO Sale Thank you for your support! - website https://lightyearstoken.com'
-}
+},{
 // Accord (ARD) Token sale
 to:         '0x75aa7b0d02532f3833b66c7f0ad35376d373ddf8',
 gasLimit:   300000,
