@@ -67,7 +67,7 @@
       <a href="https://support.mycrypto.com" target="_blank" rel="noopener noreferrer"> Help &amp; Support </a>
       <a href="https://about.mycrypto.com" target="_blank" rel="noopener noreferrer"> Our Team </a>
     </p>
-    <p class="footer__desc">MyCrypto is an open-source, client-side tool for generating Ether Wallets, handling ERC-20 tokens, and interacting with the blockchain more easily. Developed by and for the community since 2015, we’re focused on building awesome products that put the power in people’s hands.</p>
+    <p class="footer__desc">MyCrypto is an open-source, client-side tool for generating ether wallets, handling ERC-20 tokens, and interacting with the blockchain more easily. Developed by and for the community since 2015, we’re focused on building awesome products that put the power in people’s hands.</p>
     <p class="footer__copyright">
       © 2018 MyCrypto, Inc.
       <a data-target="#disclaimerModal" data-toggle="modal" target="_blank" rel="noopener noreferrer" role="link" translate="FOOTER_4" style="margin-left: 1em;">
