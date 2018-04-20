@@ -1,5 +1,5 @@
 {
-    //gitUrls will be the same since we don't have separate develop/staging repos
+    //gitUrls will be the same since we don't have separate develop/prod repos
 
     "environments": {
         "develop": {
@@ -7,15 +7,10 @@
             "distFolder": "dist",
             "buildCommand": "npm install && npm run build"
         },
-        "staging": {
+        "prod": {
             "gitUrl": "git@github.com:MyCryptoHQ/mycrypto.com.git",
-            "distFolder": ""            
-        },
-	      "prod": {
-	          "gitUrl": ""
-    	  },
-        "beta": {
-            "gitUrl": ""
+            "distFolder": "",
+            "defaultBranch": "gh-pages"
         }
     }
 }
