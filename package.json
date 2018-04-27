@@ -61,6 +61,7 @@
     "gulp-template": "^4.0.0",
     "gulp-uglify": "^2.0.1",
     "gulp-zip": "^4.0.0",
+    "hoek": "^5.0.3",
     "npm": "^4.5.0",
     "run-sequence": "^1.2.2",
     "vinyl-buffer": "^1.0.0",
