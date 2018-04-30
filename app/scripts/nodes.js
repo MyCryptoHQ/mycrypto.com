@@ -92,7 +92,7 @@ nodes.nodeList = {
         'tokenList': require('./tokens/etcTokens.json'),
         'abiList': require('./abiDefinitions/etcAbi.json'),
         'service': 'epool.io',
-        'lib': new nodes.customNode('https://mewapi.epool.io', '')
+        'lib': new nodes.customNode('https://cry.epool.io', '')
     },
     'rop_infura': {
         'name': 'Ropsten',
