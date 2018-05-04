@@ -75,7 +75,7 @@
         Disclaimer
       </a>
       <span style="margin-left: 1em">
-        v3.15.1
+        v3.16.0
       </span>
     </p>
   </div>
