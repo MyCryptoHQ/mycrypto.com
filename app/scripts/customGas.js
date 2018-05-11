@@ -7,6 +7,12 @@
 // http://www.tokensalecalendar.com/
 
 module.exports = [{
+// NPXS Token Sale 
+to:         '0xA15C7Ebe1f07CaF6bFF097D8a589fb8AC49Ae5B3',
+gasLimit:   100000,
+data:       '',
+msg:        'Pundix Token (NPXS) ERC20 token sale - website https://pundix.com'
+},{
 // LYS Token Sale 
 to:         'ab9f592eb58359b62719c532b51d2c88d59cf5048a5ba2fd99f55fdcf33af783',
 gasLimit:   200000,
