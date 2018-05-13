@@ -4,6 +4,15 @@
         aria-label="header"
         ng-controller='tabsCtrl'>
 
+
+    @@if (site === 'web' ) {
+    <div class="large announcement annoucement-info">
+        <div class="container">
+            This is the legacy version of MyCrypto. Checkout <a href="https://mycrypto.com">MyCrypto.com</a> for the new version!
+        </div>
+    </div>
+    }
+
     <section class="header__wrap">
       <div class="container">
 
