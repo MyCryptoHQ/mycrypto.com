@@ -4,6 +4,11 @@
 "decimal":8,
 "type":"default"
 },{
+"address":"0x9fC0583220eB44fAeE9e2dc1E63F39204DDD9090",
+"symbol":"2DC",
+"decimal":18,
+"type":"default"
+},{
 "address":"0xAf30D2a7E90d7DC361c8C4585e9BB7D2F6f15bc7",
 "symbol":"1ST",
 "decimal":18,
@@ -116,6 +121,11 @@
 },{
 "address":"0x737F98AC8cA59f2C68aD658E3C3d8C8963E40a4c",
 "symbol":"AMN",
+"decimal":18,
+"type":"default"
+},{
+"address":"0x38c87AA89B2B8cD9B95b736e1Fa7b612EA972169",
+"symbol":"AMO",
 "decimal":18,
 "type":"default"
 },{
@@ -1269,6 +1279,16 @@
 "decimal":18,
 "type":"default"
 },{
+"address":"0x543Ff227F64Aa17eA132Bf9886cAb5DB55DCAddf",
+"symbol":"GEN",
+"decimal":18,
+"type":"default"
+},{
+"address":"0x8a854288a5976036A725879164Ca3e91d30c6A1B",
+"symbol":"GET",
+"decimal":18,
+"type":"default"
+},{
 "address":"0xFcD862985628b254061F7A918035B80340D045d3",
 "symbol":"GIF",
 "decimal":18,
@@ -1302,6 +1322,11 @@
 "address":"0x12B19D3e2ccc14Da04FAe33e63652ce469b3F2FD",
 "symbol":"GRID",
 "decimal":12,
+"type":"default"
+},{
+"address":"0x0a9A9ce600D08BF9b76F49FA4e7b38A67EBEB1E6",
+"symbol":"GROW",
+"decimal":8,
 "type":"default"
 },{
 "address":"0xB70835D7822eBB9426B56543E391846C107bd32C",
@@ -1509,6 +1534,11 @@
 "decimal":6,
 "type":"default"
 },{
+"address":"0xFA1a856Cfa3409CFa145Fa4e20Eb270dF3EB21ab",
+"symbol":"IOST",
+"decimal":18,
+"type":"default"
+},{
 "address":"0x64CdF819d3E75Ac8eC217B3496d7cE167Be42e80",
 "symbol":"IPL",
 "decimal":18,
@@ -1601,6 +1631,11 @@
 },{
 "address":"0xb5C33F965C8899D255c34CDD2A3efA8AbCbB3DeA",
 "symbol":"KPR",
+"decimal":18,
+"type":"default"
+},{
+"address":"0x464eBE77c293E473B48cFe96dDCf88fcF7bFDAC0",
+"symbol":"KRL",
 "decimal":18,
 "type":"default"
 },{
@@ -1854,6 +1889,11 @@
 "decimal":0,
 "type":"default"
 },{
+"address":"0x82125AFe01819Dff1535D0D6276d57045291B6c0",
+"symbol":"MRL",
+"decimal":18,
+"type":"default"
+},{
 "address":"0x21f0F0fD3141Ee9E11B3d7f13a1028CD515f459c",
 "symbol":"MRP",
 "decimal":18,
@@ -1989,6 +2029,11 @@
 "decimal":18,
 "type":"default"
 },{
+"address":"0xA15C7Ebe1f07CaF6bFF097D8a589fb8AC49Ae5B3",
+"symbol":"NPXS",
+"decimal":18,
+"type":"default"
+},{
 "address":"0xB91318F35Bdb262E9423Bc7c7c2A3A93DD93C92C",
 "symbol":"NULS",
 "decimal":18,
@@ -2045,7 +2090,12 @@
 "type":"default"
 },{
 "address":"0xe9dE1C630753A15d7021Cc563429c21d4887506F",
-"symbol":"OPEN",
+"symbol":"OPEN 1",
+"decimal":8,
+"type":"default"
+},{
+"address":"0x69c4BB240cF05D51eeab6985Bab35527d04a8C64",
+"symbol":"OPEN 2",
 "decimal":8,
 "type":"default"
 },{
@@ -2287,6 +2337,11 @@
 "address":"0x618E75Ac90b12c6049Ba3b27f5d5F8651b0037F6",
 "symbol":"QASH",
 "decimal":6,
+"type":"default"
+},{
+"address":"0x2467AA6B5A2351416fD4C3DeF8462d841feeecEC",
+"symbol":"QBX",
+"decimal":18,
 "type":"default"
 },{
 "address":"0x697beac28B09E122C4332D163985e8a73121b97F",
