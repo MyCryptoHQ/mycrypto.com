@@ -1,4 +1,6 @@
-### MyCrypto
+## This codebase has been replaced by http://github.com/mycryptohq/mycrypto, and is now considered "legacy". 
+
+### MyCrypto (Legacy)
 
 - [Web](https://mycrypto.com/)
 - [Support](https://support.mycrypto.com/)
