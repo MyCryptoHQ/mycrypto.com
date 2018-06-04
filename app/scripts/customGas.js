@@ -8,6 +8,12 @@
 
 module.exports = [{
 // NPXS Token Sale 
+to:         '0x039f5050de4908f9b5ddf40a4f3aa3f329086387',
+gasLimit:   300000,
+data:       '',
+msg:        'Ethernet Cash (ENC) ERC20 Token Sale - https://ethernet.cash'
+},{
+// NPXS Token Sale 
 to:         '0xA15C7Ebe1f07CaF6bFF097D8a589fb8AC49Ae5B3',
 gasLimit:   100000,
 data:       '',
