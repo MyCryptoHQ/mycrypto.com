@@ -1,4 +1,4 @@
-### MyCrypto
+### MyCrypto/ALR*
 
 - [Web](https://mycrypto.com/)
 - [Support](https://support.mycrypto.com/)
